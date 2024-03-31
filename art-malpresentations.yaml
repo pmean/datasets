@@ -23,10 +23,11 @@ description: >
   conception (NC).
 
 copyright: >
-  This data was abstracted from a table in an
-  Creative Commons Attribution license. You are
-  free to use this data as long as you cite the
-  original source.
+  This data was abstracted from a table in a
+  paper published under a Creative Commons
+  Attribution license. You are free to use 
+  this data as long as you cite the original
+  source.
 
 format:
   delimiter: comma
