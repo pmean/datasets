@@ -6,6 +6,23 @@ For many of the datasets in this repository, the copyright is not clearly stated
 
 If you own the copyright to any of these datasets and wish to clarify the conditions under which they can be used, please contact me (mail@pmean.com). If I am not allowed to store the data on this repository, I would be glad to remove the dataset.
 
+Here are the datasets in this repository so far:
+
+-   art-malpresentation
+    -   Available as a comma separated text file
+    -   Data dictionary available in yaml format
+    -   This data set is useful for illustrating meta-analysis for a binary outcome.
+-   glycyrrhizin
+    -   Available as a comma separated text file
+    -   Data dictionary available in yaml format
+    -   This data set is useful for illustrating meta-analysis for a binary outcome.
+-   vaccine-willingness
+    -   Available as a comma separated text file
+    -   Data dictionary available in yaml format
+    -   This data set is useful for illustrating meta-analysis for a continuous outcome.
+
+
+
 I will eventually consolidate all the datasets that I have stored in various other repositories here. Some of the repositories that I need to move data from include
 
 -   [classes][cla]
