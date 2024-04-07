@@ -1,0 +1,64 @@
+---
+data_dictionary: litter-weights.sav
+
+source: >
+  Sobin, Christina; Golub, Mari (2020), 
+  “Data for: Statistical Modeling with 
+  Litter as a Random Effect in Mixed 
+  Models to Manage Intralitter 
+  Likeness”, Mendeley Data, V1, 
+  doi: 10.17632/bwptvj2cmz.1
+
+description: >
+  Hypothetical data simulated to 
+  illustrate analysis issues 
+  associated with random litter
+  effects.
+
+copyright: CC By 4.0
+
+format:
+  proprietary: IBM SPSS
+  missing_value_code: Not needed
+  rows: 180
+  columns: 5
+
+vars:
+  ID:
+    label: ID number for each animal
+    
+  LITTER:
+    label: ID number for each litter
+    
+  SEX:
+    label: Unspecified sex
+    values:
+    - 1
+    - 2
+
+  GRP	
+    label: Unspecified group
+    values:
+    - 1
+    - 2
+    - 3
+    
+  WGTP21:
+    label: Weight
+    units: Unspecified
+
+
+  case:
+     label: ID for individual child
+  
+  foot:
+    values:
+    - left
+    - right
+  
+  measure1:
+    label: First measure of FPA
+
+  measure2:
+    label: Second measure of FPA
+---

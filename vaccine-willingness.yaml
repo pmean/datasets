@@ -1,5 +1,5 @@
 ---
-data_dictionary: vaccine-willingness.yaml
+data_dictionary: vaccine-willingness.csv
 
 source: >
   Isonne C, Iera J, Sciurti A, Renzi E,
