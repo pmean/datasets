@@ -26,39 +26,21 @@ format:
 vars:
   ID:
     label: ID number for each animal
+    range: 1 to 180
     
   LITTER:
     label: ID number for each litter
+    range: 1 to 30
     
   SEX:
     label: Unspecified sex
-    values:
-    - 1
-    - 2
+    range: 1 to 2 
 
-  GRP	
+  GRP:	
     label: Unspecified group
-    values:
-    - 1
-    - 2
-    - 3
+    range: 1 to 3
     
   WGTP21:
     label: Weight
     units: Unspecified
-
-
-  case:
-     label: ID for individual child
-  
-  foot:
-    values:
-    - left
-    - right
-  
-  measure1:
-    label: First measure of FPA
-
-  measure2:
-    label: Second measure of FPA
 ---
