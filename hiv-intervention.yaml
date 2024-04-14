@@ -1,55 +1,25 @@
 ---
 data_dictionary: hiv-intervention.txt
 
-Source: >
-  OzDASL website, which cites two sources:
-  St Lawrence, J. S., Brasfield, T. L.,
-  Shirley, A., Jefferson, K. W., 
-  Alleyne, E., and O'Brannon, R. E. III
-  (1995). Cognitive-behavioral intervention
-  to reduce African American adolescents' 
-  risk for HIV infection. Journal of 
-  Consulting and Clinical Psychology, 63,
-  221-237. and Howell, D. C. (1999). 
-  Fundamental Statistics for the Behavioral
-  Sciences, 4th Edition. Duxbury Press, 
-  Pacific Grove, California. Exercises 18.9
-  and 18.11.
+source: OzDASL website
 
-Download: https://gksmyth.github.io/ozdasl/general/protsex.txt
+download: https://gksmyth.github.io/ozdasl/general/protsex.txt
 
-Details: https://gksmyth.github.io/ozdasl/general/protsex.html
+details: https://gksmyth.github.io/ozdasl/general/protsex.html
 
-Description: > 
-  "Behavioural Skills Training and 
-  Protected Sex. The data give the
-  results of an study aimed at reducing
-  the risk of HIV infection among
-  African-American adolescents. The 
-  subjects were 14-18 year old female 
-  and male adolescents in a Southern 
-  USA city. The study compared two 
-  interventions. The treatment 
-  intervention was an 8-week 
-  Behavioural Skills Training (BST) 
-  program. The control was an single 
-  2-hour education session about HIV
-  and AIDS. The subjects completed 
-  sexual attitude and activity 
-  questionnaires before and after the
-  intervention and at 6-month and 
-  12-month follow-ups. The data here 
-  are for 10 subjects for each 
-  intervention although the original 
-  study was much larger. The data 
-  given here appear to have been 
-  created by Howell (1999) based on 
-  summary statistics from the original
-  study. The dependent variable is the
+description: > 
+  This is a longitudinal study of an
+  intervention in 14-18 adolescents 
+  intended to increase the frequency
+  of condom protected sex. Subjects 
+  were allocated randomly to treatment
+  or control groups. All were evaluated
+  prior to the intervention, immediately 
+  after the intervention, 6 months and 
+  12 months after the intervention.The
+  outcome variable is the
   logarithm-transformed frequency of
   condom-protected sex ( log(Y+1) )."
-
-source: >
 
 copyright: >
   Gordon K. Smyth claims copyright on
@@ -83,23 +53,4 @@ vars:
     
   FU12:
     label: Log-frequency of protected sex reported at the 12 months follow-up
-
-St Lawrence, J. S., Brasfield, T. L., Shirley, A., Jefferson, K. W., Alleyne, E., and O'Brannon, R. E. III (1995). Cognitive-behavioral intervention to reduce African American adolescents' risk for HIV infection. Journal of Consulting and Clinical Psychology, 63, 221-237.
-
-Howell, D. C. (1999). Fundamental Statistics for the Behavioral Sciences, 4th Edition. Duxbury Press, Pacific Grove, California. Exercises 18.9 and 18.11.
-Analysis
-There is an interaction between intervention and time of measurement.
-
-
-
-
-
-
-
- 
-
-  Help
-
-Home - About Us - Contact Us
-Copyright © Gordon Smyth
 ---
