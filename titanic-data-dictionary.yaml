@@ -1,0 +1,35 @@
+---
+data_dictionary: titanic.txt
+
+description:
+  Mortality among passengers of the Titanic
+  http://www.statsci.org/data/general/titanic.html
+
+download:
+  http://www.statsci.org/data/general/titanic.txt
+  http://www.pmean.com/15/images/day2titanic.txt
+
+vars:
+  Name:
+    label: Passenger name
+  
+  PClass:
+    label: Passenger class
+    scale: ordinal
+    values: 1st, 2nd, 3rd
+    
+  Age:
+    unit: years
+    scale: positive discrete
+    missing: NA
+    
+  Sex:
+    scale: binary
+    values: female, male
+
+  Survived:
+    scale: binary
+    values:
+      1: yes
+      0: no
+---

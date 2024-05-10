@@ -7,4 +7,4 @@ Subject	Sex	Fed	Fasted10	Fasted20
 6	Female	38.7	38.1	35.8
 7	Female	35.3	34.3	32.3
 8	Female	40.5	40.1	37.3
-		 		
+
