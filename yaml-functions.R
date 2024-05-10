@@ -35,4 +35,5 @@ extract_names <- function(dd) {
   warn_text <- "No names recorded in the vars section of the yaml file"
   x <- names(dd$vars)
   if (is.null(x)) x <- warn_text
+  x
 }
