@@ -133,8 +133,8 @@ vars:
     format: mm/dd/yyyy
 
   fdate:
-    scale: ratio
     label: Date of last Follow Up
+    format: mm/dd/yyyy
 
   los:
     scale: ratio
