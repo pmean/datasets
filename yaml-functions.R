@@ -35,7 +35,7 @@ extract_labels <- function(dd) {
   # variable defined in the vars
   # section of the yaml file
   n_vars <- length(dd$vars)
-  vlabels <- rep("", n_vars)
+  vlabels <- names(dd$vars)
   for (i_vars in 1:n_vars) {
     x <- dd$vars[[i_vars]]$label
     if (!is.null(x)) vlabels[i_vars] <- x
@@ -50,7 +50,7 @@ extract_scales <- function(dd) {
   # the scales of each variable defined
   # in the vars section of the yaml file.
   n_vars <- length(dd$vars)
-  vscales <- rep("No scale recorded", n_vars)
+  vscales <- rep("no scale recorded", n_vars)
   for (i_vars in 1:n_vars) {
     x <- dd$vars[[i_vars]]$scale
     if (!is.null(x)) vscales[i_vars] <- x
