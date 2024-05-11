@@ -48,18 +48,22 @@ vars:
       Female: 1
 
   hr:
+    scale: ratio
     label: Initial Heart Rate
     unit: Beats per minute
 
   sysbp:
+    scale: ratio
     label: Initial Systolic Blood Pressure
     unit: mmHg
 
   diasbp:
+    scale: ratio
     label: Initial Diastolic Blood Pressure
     unit: mmHg
 
   bmi:
+    scale: ratio
     label: Body Mass Index
     unit: kg/m^2
 
@@ -129,9 +133,11 @@ vars:
     format: mm/dd/yyyy
 
   fdate:
+    scale: ratio
     label: Date of last Follow Up
 
   los:
+    scale: ratio
     label: Length of Hospital Stay
     unit: Days
 
@@ -143,6 +149,7 @@ vars:
       Dead: 1
 
   lenfol: 
+    scale: ratio
     label: Follow Up Time
     unit: days
 

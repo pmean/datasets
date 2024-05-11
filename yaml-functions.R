@@ -52,7 +52,7 @@ extract_scales <- function(dd) {
   n_vars <- length(dd$vars)
   vscales <- rep("No scale recorded", n_vars)
   for (i_vars in 1:n_vars) {
-    x <- dd$vars[[i_vars]]$label
+    x <- dd$vars[[i_vars]]$scale
     if (!is.null(x)) vscales[i_vars] <- x
   }
   return(vscales)
