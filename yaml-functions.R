@@ -11,6 +11,10 @@ extract_description <- function(dd) {
   return(description)
 }
 
+extract_names <- function(dd) {
+  return(names(dd$vars))
+}
+
 extract_labels <- function(dd) {
   # This function takes a data dictionary
   # in yaml format (with a specific
