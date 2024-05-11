@@ -37,10 +37,12 @@ vars:
     label: a sequential code from 1 to 100
 
   age:
+    scale: ratio
     label: Age at Admission
     unit: years
 
   gender:
+    scale: binary
     value:
       Male: 0
       Female: 1
@@ -62,48 +64,56 @@ vars:
     unit: kg/m^2
 
   cvd:
+    scale: binary
     label: History of Cardiovascular Disease
     value:
       No: 0
       Yes: 1
 
   afb:
+    scale: binary
     label: Atrial Fibrillation
     value:
       No: 0
       Yes: 1
 
   sho:
+    scale: binary
     label: Cardiogenic Shock
     value:
       No: 0
       Yes: 1
 
   chf:
+    scale: binary
     label: Congestive Heart Complications
     value:
       No: 0
       Yes: 1
 
   av3:
+    scale: binary
     label: Complete Heart Block
     value:
       No: 0
       Yes: 1
 
   miord:
+    scale: binary
     label: MI Order
     value:
       First: 0
       Recurrent: 1
 
   mitype:
+    scale: binary
     label: MI Type
     value:
       non Q-wave: 0
       Q-wave: 1
 
   year:
+    scale: ordinal
     label: Cohort Year
     value:
       yr1997: 1
@@ -126,6 +136,7 @@ vars:
     unit: Days
 
   dstat:
+    scale: binary
     label: Discharge Status from Hospital
     value:
       Alive: 0
@@ -136,6 +147,7 @@ vars:
     unit: days
 
   fstat: 
+    scale: binary
     label: Vital Satus
     value:
       Alive: 0

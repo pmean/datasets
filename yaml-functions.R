@@ -6,8 +6,9 @@ extract_description <- function(dd) {
   # defined in the description section of
   # the yaml file.
   warn_text <- "No description available"
-  x <- names(dd$description)
-  if (is.null(x)) x <- warn_text
+  description <- names(dd$description)
+  if (is.null(description)) description <- warn_text
+  return(description)
 }
 
 extract_labels <- function(dd) {
@@ -23,17 +24,36 @@ extract_labels <- function(dd) {
     x <- dd$vars[[i_vars]]$label
     if (!is.null(x)) vlabels[i_vars] <- x
   }
-  vlabels
+  return(vlabels)
 }
 
-extract_names <- function(dd) {
+extract_labels <- function(dd) {
   # This function takes a data dictionary
   # in yaml format (with a specific
   # predefined structure) and extracts
-  # names of each variable defined in the
-  # vars section of the yaml file.
-  warn_text <- "No names recorded in the vars section of the yaml file"
-  x <- names(dd$vars)
-  if (is.null(x)) x <- warn_text
-  x
+  # labels (if they exist) for every
+  # variable defined in the vars
+  # section of the yaml file
+  n_vars <- length(dd$vars)
+  vlabels <- rep("", n_vars)
+  for (i_vars in 1:n_vars) {
+    x <- dd$vars[[i_vars]]$label
+    if (!is.null(x)) vlabels[i_vars] <- x
+  }
+  return(vlabels)
+}
+
+extract_scales <- function(dd) {
+  # This function takes a data dictionary
+  # in yaml format (with a specific
+  # predefined structure) and extracts
+  # the scales of each variable defined
+  # in the vars section of the yaml file.
+  n_vars <- length(dd$vars)
+  vscales <- rep("No scale recorded", n_vars)
+  for (i_vars in 1:n_vars) {
+    x <- dd$vars[[i_vars]]$label
+    if (!is.null(x)) vscales[i_vars] <- x
+  }
+  return(vscales)
 }
