@@ -1,21 +1,27 @@
 ---
 data_dictionary: cigarettes.csv, .sas7bdat,  .txt
 
+description: >
+  Information on tar and nicotine for
+  11 brands of cigarettes.
+  
+additional_description:
+  http://jse.amstat.org/datasets/cigarettes.txt
+
+note: >
+  This data is also part of the 
+  SQLite database, melange.
+  
 source: >
   Lauren McIntyre. Using Cigarette 
   Data for An Introduction to 
   Multiple Regression. Journal of
   Statistics Education v.2, n.1 (1994)
+  
+source_url:  
   jse.amstat.org/v2n1/datasets.mcintyre.html
 
-description: >
-  Information on tar and nicotine for
-  11 brands of cigarettes.
-  
-documentation:
-  http://jse.amstat.org/datasets/cigarettes.txt
-
-download:
+download_url:
   http://jse.amstat.org/datasets/cigarettes.dat.txt
 
 copyright: >
@@ -29,16 +35,16 @@ format:
   csv: comma-delimited
   sas7bdata: proprietary
   txt: fixed width
-
-note: >
-  This data is also part of the 
-  SQLite database, melange.
   
-size:
-  rows: 11
-  columns: 6
+missing_value_code:
+  Not needed
 
-missing_value_code: Not needed
+varnames:
+  Not included
+
+size:
+  rows: 25
+  columns: 5
 
 vars: 
   brand_name: 

@@ -2,41 +2,49 @@
 data_dictionary:
   fat.csv, .txt
   
-source:
-  This dataset is part of the Journal of Statistcs
-  Education data archive 
-  (http://jse.amstat.org/jse_data_archive.htm) and 
-  described in the article, Roger W. Johnson (1996)
-  Fitting Percentage of Body Fat to Simple Body 
-  Measurements, Journal of Statistics Education, 
-  4(1), DOI 10.1080/10691898.1996.11910505.
-
-description:  
+description: >
   This dataset includes two measures of body fat (a 
   quantity  that is normally quite difficult to 
   measure) along with some simpler measures of body
   size that could be used to predict body fat.
+  
+additional_description:  
+  http://jse.amstat.org/datasets/fat.txt
 
-download:
-  text-format: http://jse.amstat.org/datasets/fat.dat.txt
-  additional-information: http://jse.amstat.org/datasets/fat.txt
-  publication: https://www.tandfonline.com/doi/full/10.1080/10691898.1996.11910505
+note: >
+  This data is also part of the 
+  SQLite database, melange.
 
-copyright:
+source: >
+  Roger W. Johnson (1996) Fitting Percentage of 
+  Body Fat to Simple Body Measurements, Journal
+  of Statistics Education, 4(1), 
+  DOI 10.1080/10691898.1996.11910505.
+
+source_url: 
+  https://www.tandfonline.com/doi/full/10.1080/10691898.1996.11910505
+
+download_url:
+  http://jse.amstat.org/datasets/fat.dat.txt
+
+copyright: >
   The author of the article cited above owns the
   copyright for this dataset. You should, however,
   be able to use this data for individual
   educational purposes under the Fair Use 
   guidelines of U.S. copyright law.
   
-note: >
-  This data is also part of the 
-  SQLite database, melange.
-
 format: 
-  delimiter: tab
-  varnames: not included in the first row of data
-  missing-value-code: Not needed
+  csv: comma-delimited
+  txt: tab-delimited
+  
+varnames: 
+  Not included
+  
+missing_value_code: 
+  Not needed
+  
+size:
   rows: 252
   columns: 19
 

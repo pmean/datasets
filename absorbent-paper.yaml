@@ -1,12 +1,6 @@
 ---
 data_dictionary: absorbent-paper.csv
 
-source: >
-  Josse, Antoine (2018), “Absorbent 
-  paper method for recording children 
-  foot progression angle”, Mendeley Data,
-  V2, doi: 10.17632/7258b94yvp.2
-
 description: >
   Foot progression angle (FPA) is typically
   measured using an expensive pressure
@@ -19,12 +13,25 @@ description: >
   all the assessments were negative, 
   representing in-toeing gait.
 
-copyright: CC By 4.0
+source: >
+  Josse, Antoine (2018), “Absorbent 
+  paper method for recording children 
+  foot progression angle”, Mendeley Data,
+  V2, doi: 10.17632/7258b94yvp.2
+
+copyright:
+  CC By 4.0
 
 format:
-  delimiter: comma
-  varnames: first row of data
-  missing_value_code: Not needed
+  comma-delimited
+
+varnames:
+ first row of data
+  
+missing_value_code: 
+  Not needed
+
+size:
   rows: 26
   columns: 6
 

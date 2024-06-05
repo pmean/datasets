@@ -1,6 +1,12 @@
 ---
 data_dictionary: litter-weights.sav
 
+description: >
+  Hypothetical data simulated to 
+  illustrate analysis issues 
+  associated with random litter
+  effects.
+
 source: >
   Sobin, Christina; Golub, Mari (2020), 
   “Data for: Statistical Modeling with 
@@ -9,17 +15,14 @@ source: >
   Likeness”, Mendeley Data, V1, 
   doi: 10.17632/bwptvj2cmz.1
 
-description: >
-  Hypothetical data simulated to 
-  illustrate analysis issues 
-  associated with random litter
-  effects.
-
 copyright: CC By 4.0
 
 format:
   proprietary: IBM SPSS
-  missing_value_code: Not needed
+  
+missing_value_code: Not needed
+
+size:
   rows: 180
   columns: 5
 

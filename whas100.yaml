@@ -1,12 +1,12 @@
 ---
-data-dictionary: whas100.dat
+data_dictionary: whas100.dat
 
 source:
   This data comes from Table 2.1 of 
   Hosmer DW, Lemeshow S, May S. Applied Survival
   Analysis. 2008. John Wiley and Sons, Hoboken, NJ.
 
-download:
+download_url:
   text-format: ftp://ftp.wiley.com/public/sci_tech_med/survival/
   sas-format: https://stats.idre.ucla.edu/wp-content/uploads/2016/02/asa2_sas.zip
   spss-format: https://stats.idre.ucla.edu/wp-content/uploads/2016/02/asa2_spss.zip
@@ -23,10 +23,16 @@ copyright:
   can use this data, but it is presented here under
   the Fair Use provisions of U.S. Copyright law.
 
-format: 
-  delimiter: one or more spaces
-  varnames: first row of data
-  missing-value-code: Not needed
+format:
+  space-delimited 
+
+varnames:
+  first row of data
+  
+missing_value_code: 
+  Not needed
+ 
+size:
   rows: 100
   columns: 9
 

@@ -1,17 +1,6 @@
 ---
 data_dictionary: diamonds.txt
 
-source: 
-  This file is published on Journal of
-  Statistics Education website. The data
-  itself is found at 
-  http://jse.amstat.org/v9n2/4Cdata.txt and
-  a brief description is available at
-  http://jse.amstat.org/v9n2/4C.txt. The 
-  original source is Singapore's Business
-  Times, 2000-02-18.
-  
-
 description:  
   The data is intended to teach some lessons
   about regression models. The size of a 
@@ -20,6 +9,21 @@ description:
   for 308 diamonds, along with their sales
   price.
   
+additional_description:  
+  http://jse.amstat.org/v9n2/4C.txt
+
+repository:
+  Journal of Statistics Education Data Archive
+
+repository_url:
+  https://jse.amstat.org/jse_data_archive.htm
+  
+download_url:  
+  http://jse.amstat.org/v9n2/4Cdata.txt
+  
+source: 
+  Singapore's Business Times, 2000-02-18.
+
 copyright:  
   The general policy of the Journal of Statistics 
   Education is that the author of journal articles
@@ -30,9 +34,14 @@ copyright:
   guidelines of U.S. copyright law.
 
 format: 
-  delimiter: space
-  varnames: not included in the first row of data
-  missing-value-code: none needed
+  space-delimited
+  
+varnames: 
+  Not included
+  
+missing_value_code: none needed
+
+size: 
   rows: 308
   columns: 5
 

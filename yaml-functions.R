@@ -79,29 +79,30 @@ review_yaml_structure <- function() {
   }
   recommended_fields <- c(
     "data_dictionary",
-    "source",
     "description",
+    "additional_description",
+    "note",
+    "source",
+    "source_url",
+    "repository",
+    "repository_url",
+    "download_url",
     "copyright",
     "format",
-    "vars",
-    "documentation",
-    "download",
-    "note",
-    "size",
+    "varnames",
     "missing_value_code",
-    "details",
-    "data-dictionary")
+    "size",
+    "vars")
   all_names <- data.frame(
     fields=recommended_fields,
-    order=1:length(recommended_fields))
+    field_order=1:length(recommended_fields))
   for (dd in unique(yaml_aggregate$files)) {
     yaml_aggregate %>%
       filter(files==dd) %>%
-      full_join(all_names) %>% 
-      select(fields, files) %>%
+      full_join(all_names, by="fields") %>% 
+      select(fields, field_order, files) %>%
+      arrange(field_order) %>%
       print
-  }  
+    cat("\n\n")
   }
-}
-  
 }
