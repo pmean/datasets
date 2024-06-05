@@ -62,20 +62,46 @@ extract_scales <- function(dd) {
   return(vscales)
 }
 
-list_datasets <- function() {
-	fn <- list.files()
-	yaml_files <- str_subset(fn, "yaml$")
-	for (f in yaml_files) {
-		dd <- read_yaml(f)
-		root <- str_replace(f, "\\..*", "")
-		cat(glue("{root}: {dd$description}"))
-		cat("\n\n")
-	}
-	return(0)
+review_yaml_structure <- function() {
+  library(glue)
+  library(magrittr)
+  library(readr)
+
+  fn <- list.files()
+  yaml_files <- str_subset(fn, "yaml$")
+
+  yaml_aggregate <- NULL
+  
+  for (yaml_file in yaml_files) {
+    dd <- read_yaml(yaml_file)
+    root <- str_replace(yaml_file, "\\..*", "")
+    yaml_aggregate %<>% bind_rows(data.frame(files=root, fields=names(dd)))
+  }
+  recommended_fields <- c(
+    "data_dictionary",
+    "source",
+    "description",
+    "copyright",
+    "format",
+    "vars",
+    "documentation",
+    "download",
+    "note",
+    "size",
+    "missing_value_code",
+    "details",
+    "data-dictionary")
+  all_names <- data.frame(
+    fields=recommended_fields,
+    order=1:length(recommended_fields))
+  for (dd in unique(yaml_aggregate$files)) {
+    yaml_aggregate %>%
+      filter(files==dd) %>%
+      full_join(all_names) %>% 
+      select(fields, files) %>%
+      print
+  }  
+  }
 }
-list_datasets()
-
-# https://github.com/pmean/datasets/blob/master/.yaml
-# https://raw.githubusercontent.com/pmean/datasets/master/.yaml
-# https://raw.githubusercontent.com/pmean/datasets/master/.csv
-
+  
+}
