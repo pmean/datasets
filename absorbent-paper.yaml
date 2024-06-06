@@ -33,7 +33,7 @@ missing_value_code:
 
 size:
   rows: 26
-  columns: 6
+  columns: 4
 
 vars:
   case:

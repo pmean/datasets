@@ -1,0 +1,113 @@
+---
+data_dictionary: balance1.txt
+
+source: 
+  This file was downloaded from the Australian
+  Data And Story Library (OzDASL). You can find
+  a description at
+  http://www.statsci.org/data/oz/ctsib.html
+  
+  The data comes originally from Bryanton MA,
+  Bilodeau M. The Effect of Vision and Surface
+  Compliance on Balance in Untrained and 
+  Strength Athletes. J Mot Behav. 2019, 51(1), 75-82.
+  doi 10.1080/00222895.2017.1423019. 
+  Epub 2018 Jan 29. PMID 29377776.
+
+description:  
+  The study examined balance for subjects on two
+  different floor conditions (normal or foam) and
+  with three different levels of sight (eyes open,
+  eyes closed, or closed dome). Each of these
+  conditions was replicated twice. The outcome 
+  measure was an ordinal variable on a scale from
+  1 to 4.
+
+note:  
+  The dataset shows how to display repeated measures
+  data using the wide format. An alternate 
+  dataset, balance2.txt, displays the data using the
+  tall format.
+
+copyright:  
+  Unknown. You should be able to use this data for
+  individual educational purposes under the Fair Use
+  guidelines of U.S. copyright law.
+  
+download:
+  http://www.statsci.org/data/oz/ctsibrm.txt
+  http://www.statsci.org/data/oz/ctsibuni.txt
+
+format: 
+  delimiter: tab
+  varnames: first row of data
+  missing-value-code: Not needed
+  rows: 40
+  columns: 17
+
+vars:
+  Subject:
+    scale: positive integers
+    range: 1 to 40
+
+  Sex:
+    values: male or female
+
+  Age:
+    scale: non-negative integers
+    unit: years
+
+  Height:
+    unit: cm
+
+  Weight:
+    unit: kg
+    
+  NO1:
+    label: Balance on normal surface with eyes open, first replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
+
+  NO2:
+    label: Balance on normal surface with eyes open, second replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
+  
+  NC1:
+    label: Balance on normal surface with eyes closed, first replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
+
+  NC2:
+  
+  ND1:
+    label: Balance on normal surface with dome, first replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
+    
+  ND2:
+
+  FO1:
+    label: Balance on foam surface with eyes open, first replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
+    
+  FO2:
+  
+  FC1:
+    label: Balance on foam surface with eyes closed, first replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
+
+  FC2:
+  
+  FD1:
+    label: Balance on foam surface with dome, first replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
+
+  FD2:
+    label: Balance on foam surface with dome, second replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
+---

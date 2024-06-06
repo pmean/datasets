@@ -1,0 +1,14 @@
+---
+data_dictionary: energy.txt
+
+description:
+  Energy Requirements Running, Walking and Cycling
+  
+additional_description:  
+  http://www.statsci.org/data/general/energy.html
+
+
+download:
+  http://www.statsci.org/data/general/energy.txt
+  www.pmean.com/15/images/day4energy.txt
+---
