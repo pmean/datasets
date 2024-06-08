@@ -32,9 +32,11 @@ copyright: >
 format:
   comma-delimited
 
-varnames: first row of data
+varnames:
+  first row of data
   
-missing_value_code: Not needed
+missing_value_code:
+  not needed
 
 size:
   rows: 11
@@ -46,8 +48,8 @@ vars:
 
   study_type:
     values:
-      - "casecontrol"
-      - "cohort"
+      - casecontrol
+      - cohort
 
   art_events:
     label: number of malpresentation in ART groups

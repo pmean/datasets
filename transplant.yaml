@@ -58,9 +58,15 @@ copyright:
   to distribute data.
 
 format: 
-  delimiter: tab
-  varnames: first row of data
-  missing-value-code: NA
+  tab-delimited
+  
+varnames:
+  first row of data
+
+missing-value-code: 
+  NA
+
+size:
   rows: 103
   columns: 14
 

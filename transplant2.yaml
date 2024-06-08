@@ -19,9 +19,15 @@ copyright:
   Please refer to transplant-data_dictionary.yaml
 
 format: 
-  delimiter: comma
-  varnames: first row of data
-  missing-value-code: Not needed
+  comma-delimited
+  
+varnames:
+  first row of data
+
+missing-value-code: 
+  not needed
+
+size:
   rows: 172
   columns: 8
 

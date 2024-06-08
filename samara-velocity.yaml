@@ -31,9 +31,15 @@ copyright:
   Fair Use guidelines of U.S. copyright law.
 
 format: 
-  delimiter: tab
-  varnames: included in the first row of data
-  missing-value-code: NA
+  tab-delimited
+
+varnames: 
+  first row of data
+  
+missing-value-code: 
+  NA
+
+size:
   rows: 36
   columns: 3
 

@@ -18,7 +18,8 @@ documentation:
 download:
   https://data.mendeley.com/datasets/y7b6hjnxxj/1
 
-format: xls
+format: 
+  proprietary (Excel)
 
 note: >
   There are three separate worksheets. The first

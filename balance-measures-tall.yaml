@@ -10,7 +10,7 @@ description:
 copyright:  
   See balance1-data-dictionary.yaml
 
-download:
+download_url:
   http://www.statsci.org/data/oz/ctsibuni.txt
 
 format: 

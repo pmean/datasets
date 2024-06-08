@@ -28,9 +28,15 @@ copyright: |
   third party.
   
 format: 
-  proprietary: xlsx
-  varnames: first row of data
-  missing-value-code: Not applicable
+  proprietary (Excel)
+
+varnames:
+  first row of data
+  
+missing-value-code: 
+  not applicable
+  
+size:
   rows: 184
   columns: 31
 

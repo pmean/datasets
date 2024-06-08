@@ -1,12 +1,6 @@
 ---
 data_dictionary: digital-citizenship.sav
 
-source: > 
-  Connolly, Randy; Miller, Janet (2022), 
-  “Evaluating Digital Citizenship Scale
-  [2018]”, Mendeley Data, V1, 
-  doi: 10.17632/2v5fz56bjk.1
-  
 description: >
   From the original source: This dataset was 
   used in our study that investigated the 
@@ -20,6 +14,12 @@ description: >
   n=414). The dataset also included 
   Big-Factor-Five personality data as well.
   
+source: > 
+  Connolly, Randy; Miller, Janet (2022), 
+  “Evaluating Digital Citizenship Scale
+  [2018]”, Mendeley Data, V1, 
+  doi: 10.17632/2v5fz56bjk.1
+  
 note: >
   Also see Michael Joseph Dominic Roberts, Randy
   Connolly, Joel Conley, Janet Miller. Digital 
@@ -31,7 +31,9 @@ copyright:
   CC BY 4.0
 
 format: 
-  proprietary: SPSS
+  proprietary (SPSS)
+  
+size:  
   rows: 1850
   columns: 51
 

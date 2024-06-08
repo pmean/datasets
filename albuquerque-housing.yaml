@@ -2,9 +2,15 @@
 data_dictionary: housing.txt
 
 format: 
-  delimiter: tab
-  varnames: first row of data
-  missing-value-code: "."
+  tab-delimited
+  
+varnames: 
+  first row of data
+
+missing-value-code: 
+  .
+  
+size:  
   rows: 117
   columns: 7
 

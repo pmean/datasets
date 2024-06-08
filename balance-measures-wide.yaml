@@ -1,19 +1,6 @@
 ---
 data_dictionary: balance1.txt
 
-source: 
-  This file was downloaded from the Australian
-  Data And Story Library (OzDASL). You can find
-  a description at
-  http://www.statsci.org/data/oz/ctsib.html
-  
-  The data comes originally from Bryanton MA,
-  Bilodeau M. The Effect of Vision and Surface
-  Compliance on Balance in Untrained and 
-  Strength Athletes. J Mot Behav. 2019, 51(1), 75-82.
-  doi 10.1080/00222895.2017.1423019. 
-  Epub 2018 Jan 29. PMID 29377776.
-
 description:  
   The study examined balance for subjects on two
   different floor conditions (normal or foam) and
@@ -23,6 +10,9 @@ description:
   measure was an ordinal variable on a scale from
   1 to 4.
 
+additional_description:  
+  http://www.statsci.org/data/oz/ctsib.html
+  
 note:  
   The dataset shows how to display repeated measures
   data using the wide format. An alternate 
@@ -30,18 +20,37 @@ note:
   tall format.
 
 copyright:  
-  Unknown. You should be able to use this data for
-  individual educational purposes under the Fair Use
-  guidelines of U.S. copyright law.
+  unknown
   
-download:
+repository:
+  Australasian Data and Story Library
+ 
+repository_url: 
+  http://www.statsci.org/data/oz/
+  
+download_url:
   http://www.statsci.org/data/oz/ctsibrm.txt
-  http://www.statsci.org/data/oz/ctsibuni.txt
+
+source: >
+  Bryanton MA, Bilodeau M. The Effect 
+  of Vision and Surface Compliance on 
+  Balance in Untrained and Strength
+  Athletes. J Mot Behav. 2019, 51(1),
+  75-82. doi: 10.1080/00222895.2017.1423019. 
+
+source_url:
+  https://doi.org/10.1080/00222895.2017.1423019
 
 format: 
-  delimiter: tab
-  varnames: first row of data
-  missing-value-code: Not needed
+  tab-delimited
+  
+varnames: 
+  first row of data
+
+missing-value-code: 
+  not needed
+
+size:
   rows: 40
   columns: 17
 
@@ -86,6 +95,9 @@ vars:
     range: 1 to 4
     
   ND2:
+    label: Balance on normal surface with dome, second replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
 
   FO1:
     label: Balance on foam surface with eyes open, first replicate
@@ -93,6 +105,9 @@ vars:
     range: 1 to 4
     
   FO2:
+    label: Balance on foam surface with eyes open, second replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
   
   FC1:
     label: Balance on foam surface with eyes closed, first replicate
@@ -100,6 +115,9 @@ vars:
     range: 1 to 4
 
   FC2:
+    label: Balance on foam surface with eyes closed, second replicate
+    scale: ordinal (lower is better)
+    range: 1 to 4
   
   FD1:
     label: Balance on foam surface with dome, first replicate

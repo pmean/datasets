@@ -1,12 +1,6 @@
 ---
 data_dictionary: digital-citizenship-revised.sav
 
-source: > 
-  Connolly, Randy; Miller, Janet (2022), 
-  “Evaluating Digital Citizenship Scale
-  [2018]”, Mendeley Data, V1, 
-  doi: 10.17632/2v5fz56bjk.1
-  
 description: >
   This is a modification/simplification of
   the digital-citizenship data set. An
@@ -25,11 +19,19 @@ note: >
   Traits. Informatics 2023, 10(3), 58; 
   doi: 10.3390/informatics10030058
   
+source: > 
+  Connolly, Randy; Miller, Janet (2022), 
+  “Evaluating Digital Citizenship Scale
+  [2018]”, Mendeley Data, V1, 
+  doi: 10.17632/2v5fz56bjk.1
+  
 copyright:  
   CC BY 4.0
 
 format: 
-  proprietary: SPSS
+  proprietary (SPSS)
+
+size:
   rows: 1837
   columns: 6
 

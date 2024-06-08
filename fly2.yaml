@@ -1,19 +1,22 @@
 ---
 data_dictionary: fly2.txt
 
-source:
-  See fly1-data_dictionary.yaml
-  
 description:
-  See fly1-data_dictionary.yaml
+  This dataset provides a simple example
+  of survival and censoring. For more 
+  details, refer to the fly1 data 
+  dictionary.
   
-copyright:  
-  See fly1-data_dictionary.yaml
-
 format: 
-  delimiter: space
-  varnames: not included in the first row of data
-  missing-value-code: Not needed
+  space-delimited
+  
+varnames: 
+  not included
+  
+missing-value-code: 
+  not needed
+
+size:
   rows: 25
   columns: 2
     Two observations on each line of text.

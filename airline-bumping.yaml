@@ -15,19 +15,25 @@ description:
   cash or travel vouchers. But if no one volunteers, airlines will
   involuntarily bump passengers from the flight.
   
+additional_description:
+  https://dasl.datadescription.com/datafile/airline-bumping-2017/
+  
 download: 
   text-format: https://dasl.datadescription.com/download/data/3048
-  additional-information: https://dasl.datadescription.com/datafile/airline-bumping-2017/
 
 copyright:
-  Unknown. You should be able to use this data for
-  individual educational purposes under the Fair Use
-  guidelines of U.S. copyright law.
+  unknown
 
 format: 
-  delimiter: tab
-  varnames: first row of data
-  missing-value-code: Not needed
+  tab-delimited
+  
+varnames: 
+  first row of data
+  
+missing-value-code:
+  not needed
+  
+size:  
   rows: 12
   columns: 5
 

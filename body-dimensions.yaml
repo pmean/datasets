@@ -1,10 +1,11 @@
 ---
 data_dictionary: body.txt
 
-authors:
-  Steve Simon
-
-creation_date: 2021-04-08
+description:  
+  Various body dimensions and body fat measurements
+  
+additional_description:  
+  http://jse.amstat.org/datasets/body.txt
 
 copyright:  
   According to the Journal of Statistics Education,
@@ -13,24 +14,19 @@ copyright:
   purposes should be fine under the Fair Use
   provisions of copyright law.
 
-description:  
-  Various body dimensions and body fat measurements
-  
-additional_description:  
-  http://jse.amstat.org/datasets/body.txt
+download_url: 
+  http://www.amstat.org/publications/jse/datasets/body.dat.txt
 
-download: 
-  original: http://www.amstat.org/publications/jse/datasets/body.dat.txt
-  alt1: http://www.pmean.com/15/images/day1body.txt
-  
 format: 
-  text: fixed_width
+  fixed_width text
 
-  varnames: first row of data
+varnames: 
+  first row of data
 
-  missing-value-code: not needed
+missing-value-code: 
+  not needed
 
+size:
   rows: 507
-
   columns: 25
 ---

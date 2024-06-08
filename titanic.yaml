@@ -23,7 +23,6 @@ additional_description:
 
 download_url:
   - http://www.statsci.org/data/general/titanic.txt
-  - http://www.pmean.com/15/images/day2titanic.txt
 
 format:
   tab-delimited

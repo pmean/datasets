@@ -1,13 +1,6 @@
 ---
 data_dictionary: bf.csv
 
-author:
-  Steve Simon wrote this data dictionary on 2024-01-30.
-  
-copyright:
-  This data is in the public domain and is freely avaiable for anyone
-  to use. Acknowledgement of the source is appreicated but not required.
-
 description: >
   This data comes from a research study done at Children's Mercy Hospital
   and St. Luke's Medical Center. This was a study of breast feeding in 
@@ -18,10 +11,20 @@ description: >
   received bottles when the mothers were not available. Both groups
   were monitored for six months after discharge from the hospital.
 
+copyright:
+  This data is in the public domain and is freely avaiable for anyone
+  to use. Acknowledgement of the source is appreicated but not required.
+
 format:
-  delimiter: comma
-  varnames: included in the first row of data
-  missing-value-code: A space between two commas
+  comma-delimited
+  
+varnames: 
+  first row of data
+  
+missing-value-code:
+  A space between two commas
+
+size:
   rows: 844
   columns: 31
 

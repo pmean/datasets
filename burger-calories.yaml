@@ -1,21 +1,27 @@
 ---
 data_dictionary: burger.txt
 
-source: 
+
+description: >
+  Fat, sodium, and calories for various 
+  fast food hamburgers.
+  
+additional-description: 
+  https://dasl.datadescription.com/datafile/burgers/
+
+repository:
+  Data And Story Library (DASL)
+  
+repository_url:
+  https://dasl.datadescription.com/
+ 
+source: >
   DASL, Data and Story Library. DASL is a repository of small but
   interesting datasets. It is maintained by Data Description, a
   company that sells a statistical analysis program, Data Desk.
   
-
-description:
-  (From the original website) "Fast food is often considered unhealthy
-  because much of it is high in both fat and sodium. But are the two
-  related? The data give the fat and sodium contents of several brands
-  of burgers."
-
 download: 
   text-format: https://dasl.datadescription.com/download/data/3088
-  additional-information: https://dasl.datadescription.com/datafile/burgers/
 
 copyright:
   Unknown. You should be able to use this data for
@@ -23,9 +29,15 @@ copyright:
   guidelines of U.S. copyright law.
 
 format: 
-  delimiter: tab
-  varnames: first row of data
-  missing-value-code: Not needed
+  tab-delimited
+  
+varnames: 
+  first row of data
+
+missing-value-code: 
+  not needed
+
+size:
   rows: 7
   columns: 3
 

@@ -24,16 +24,12 @@ source_url:
 download_url:
   http://jse.amstat.org/datasets/cigarettes.dat.txt
 
-copyright: >
-  Although the copyright provisions are 
-  not clearly listed on the original
-  website, you can use this data for
-  educational purposes under the Fair
-  Use provisions of copyright law.
+copyright:
+  unknown
 
 format:
   csv: comma-delimited
-  sas7bdata: proprietary
+  sas7bdata: proprietary (SAS)
   txt: fixed width
   
 missing_value_code:

@@ -1,6 +1,13 @@
 ---
 data_dictionary: caries-detection.csv
 
+description: >  
+  These data represent the diagnostic 
+  performance of artificial intelligence models
+  for caries detection in bitewing radiographs.
+  Five studies were identified for a sytematic
+  overview.
+  
 source: >
   This file was abstracted from Table 2 of
   Ammar N, Kühnisch J. Diagnostic 
@@ -11,22 +18,19 @@ source: >
   doi: 10.1016/j.jdsr.2024.02.001. 
   PMID: 38450159; PMCID: PMC10917640. 
 
-description: >  
-  These data represent the diagnostic 
-  performance of artificial intelligence models
-  for caries detection in bitewing radiographs.
-  Five studies were identified for a sytematic
-  overview.
-  
 copyright: >  
-  Unknown. You should be able to use this data for
-  individual educational purposes under the Fair Use
-  guidelines of U.S. copyright law.
+  unknown
 
 format: 
-  delimiter: comma
-  varnames: first row of data
-  missing-value-code: Not needed
+  comma-delimited
+  
+varnames: 
+  first row of data
+  
+missing-value-code:
+  not needed
+  
+size:  
   rows: 11
   columns: 6
 

@@ -1,12 +1,6 @@
 ---
 data_dictionary: collaborative-consumption.xlsx
 
-source: >
-  Saginova, Olga (2020), “Dataset on the 
-  questionnaire-based survey of sharing 
-  services users’ motivation”, Mendeley Data,
-  V1, doi: 10.17632/c5k8wjrhd9.1 
-
 description: >
   From the original source: "The data set 
   presents data collected by online survey 
@@ -15,22 +9,24 @@ description: >
   active and potential users of different 
   sharing services platforms."
   
+source: >
+  Saginova, Olga (2020), “Dataset on the 
+  questionnaire-based survey of sharing 
+  services users’ motivation”, Mendeley Data,
+  V1, doi: 10.17632/c5k8wjrhd9.1 
+
 copyright: >
-  CC By 4.0. You can share, copy and modify
-  this dataset so long as you give appropriate
-  credit, provide a link to the CC BY license,
-  and indicate if changes were made, but you 
-  may not do so in a way that suggests the 
-  rights holder has endorsed you or your use
-  of the dataset. Note that further permission
-  may be required for any content within the
-  dataset that is identified as belonging to a
-  third party.
+  CC By 4.0
   
 format: 
-  proprietary: xlsx
-  varnames: first row of data
-  missing-value-code: Not applicable
+  proprietary (Excel)
+  
+varnames: first row of data
+
+missing-value-code:
+  not applicable
+  
+size:  
   rows: 184
   columns: 31
 
