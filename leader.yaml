@@ -1,30 +1,39 @@
 ---
-data_dictionary: psychiatric-patients.txt
+data_dictionary: leader.dta, RData, sas7bdat, sav, txt
 
-source: 
-  This dataset is found in the Paul Allison book, 
-  Survival Analysis Using SAS. A Practical Guide. 
-  It is a subset of the data analyzed in a 1991 
-  book by Henry Bienen and Nicolas van de Walle, 
-  Of Time and Power.
-
-description:
-  This data set shows how long political leaders 
-  of various countries stayed in power and is useful
-  for (among other things) illustrating how to fit
-  competing risk models based on the manner in which
-  each leader lost power.
+description: >
+  This data set shows how long political
+  leaders of various countries stayed in
+  power and is useful for (among other 
+  things) illustrating how to fit
+  competing risk models based on the 
+  manner in which each leader lost power.
   
-copyright:
-  There is no information in Allison's book about 
-  copyright restrictions, but you should be able to
-  use this data for individual educational purposes 
-  under the fair use guidelines of copyright laws.
+source: >
+  Paul Allison. Survival Analysis Using 
+  SAS. A Practical Guide.
+  
+additional_source:  
+  Henry Bienen and Nicolas van de Walle
+  (1991). Of Time and Power.
+
+copyright: 
+  unknown
 
 format: 
-  delimiter: tab
-  varnames: first row of data
-  missing-value-code: Not needed
+  dta: proprietary (Stata)
+  RData: proprietary (R)
+  sas7bdat: proprietary (SAS)
+  sav: proprietary (SPSS)
+  txt: tab-delimited
+  
+varnames:
+  first row of data
+  
+missing-value-code:
+  Not needed
+
+size:
   rows: 472
   columns: 13
 

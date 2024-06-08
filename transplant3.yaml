@@ -1,5 +1,5 @@
 ---
-data_dictionary: heart.csv
+data_dictionary: transplant3.csv
 
 source:
   This dataset is identical to transplant2.csv, 

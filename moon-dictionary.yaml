@@ -2,15 +2,7 @@
 data_dictionary: 
   moon.txt
 
-source:
-  This data file is part of OzDASL, an archive of various data sets 
-  useful for teaching. The maintainers of the data archive are from
-  Australia, but this particular data set is not specific to that part
-  of the world. The entire archive is at
-  https://dasl.datadescription.com/
-  
-
-description:
+description: >
   This data set shows a perceptual experiment where subjects were asked
   to estimate a size ratio with their head level to the ground and then
   with their head elevated (in other words, looking upward). Although
@@ -19,21 +11,32 @@ description:
   whether the overestimation is greater with eyes level than with eyes
   elevated.
 
+
 additional_description:
   https://gksmyth.github.io/ozdasl/general/moon.html
+
+repository:
+  Data And Story Library (DASL)
   
-download:
+repository_url:
+  https://dasl.datadescription.com/
+  
+download_url:
   https://gksmyth.github.io/ozdasl/general/moon.txt
   
 copyright:  
-  Unknown. You should be able to use this data for individual 
-  educational purposes under the Fair Use guidelines of U.S. 
-  copyright law.
+  unknown
 
 format: 
-  delimiter: tab
-  varnames: first row of data
-  missing-value-code: not needed
+  tab-delimited
+
+varnames: 
+  first row of data
+
+missing-value-code:
+  not needed
+
+size:
   rows: 10
   columns: 3
 
