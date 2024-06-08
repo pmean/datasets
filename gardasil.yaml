@@ -27,9 +27,16 @@ copyright:
   guidelines of U.S. copyright law.
 
 format: 
-  delimiter: comma (.csv) or tab (.tsv)
-  varnames: first row of data
-  missing-value-code: not needed
+  csv: comma-delimited
+  tsv: tab-delimited
+
+varnames:
+ first row of data
+
+missing-value-code:
+  not needed
+
+size:
   rows: 1413
   columns: 10
 

@@ -21,9 +21,15 @@ download:
   http://www.pmean.com/15/images/day3fev.txt
 
 format:
-  delimiter: space
-  varnames: not included in the first row of data
-  missing-value-code: Not needed
+  space-delimited
+  
+varnames: 
+  not included
+  
+missing-value-code:
+  not needed
+  
+size:   
   rows: 654
   columns: 5
 

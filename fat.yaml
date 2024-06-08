@@ -28,21 +28,17 @@ download_url:
   http://jse.amstat.org/datasets/fat.dat.txt
 
 copyright: >
-  The author of the article cited above owns the
-  copyright for this dataset. You should, however,
-  be able to use this data for individual
-  educational purposes under the Fair Use 
-  guidelines of U.S. copyright law.
+  Copyright is held by Roger Johnson.
   
 format: 
   csv: comma-delimited
   txt: tab-delimited
   
 varnames: 
-  Not included
+  not included
   
 missing_value_code: 
-  Not needed
+  not needed
   
 size:
   rows: 252

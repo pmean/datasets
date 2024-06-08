@@ -1,22 +1,34 @@
 ---
 data_dictionary: full-moon.txt
 
-source: 
-  https://gksmyth.github.io/ozdasl/general/fullmoon.html
-
-description:
+description: >
   The data give the admission rates to the
   emergency room of a Virginia mental health
   clinic before, during and after the 12 
   full moons from August 1971 to July 1972.
+  
+additional_description:  
+  https://gksmyth.github.io/ozdasl/general/fullmoon.html
 
-delimiter: tab
+source: >
+  Blackman, S., and Catalina, D. (1973). The moon and the emergency room. Perceptual and Motor Skills 37, 624-626.
+  
+  Ovlin, J. F. (1943). Moonlight and nervous disorders. American Journal of Psychiatry 99, 578-584.
+  
+  Larsen, R.J., and Marx, M.L., (1986). An Introduction to Mathematical Statistics and Its Applications 2nd Edition. Prentice-Hall, Englewood Cliffs, New Jersey. Case Study 1.2.3.
 
-copyright:
-  No copyright is stated explicitly. You 
-  should be able to use this data for
-  individual educational purposes under the
-  Fair Use guidelines of U.S. copyright law.
+copyright: 
+  unknown
+
+format:
+  tab-delimited
+  
+varnames:
+  first row of data
+
+size:
+  rows: 36
+  columns: 3  
 
 vars:
   Month:
@@ -26,21 +38,11 @@ vars:
   Moon:
     label: time relative to full moon
     values: 
-      Before
-      During
-      After
+      - Before
+      - During
+      - After
       
   Admission:
     label: Admission rate
     Unit: patients/day
     
-Source: 
-  Blackman, S., and Catalina, D. (1973). The
-  moon and the emergency room. Perceptual 
-  and Motor Skills 37, 624-626.
-  
-  Larsen, R.J., and Marx, M.L., (1986). An
-  Introduction to Mathematical Statistics 
-  and Its Applications 2nd Edition. 
-  Prentice-Hall, Englewood Cliffs, New 
-  Jersey. Case Study 1.2.3.

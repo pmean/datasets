@@ -2,22 +2,22 @@
 data_dictionary: fly1.txt
 
 source: >
-  This data is a lightly modified subset of data
-  from the Journal of Statistics Data Archive on
-  survival time of fruit flies and is described
-  in the article
-
   Hanley JA, Shapiro SH (1994) Sexual Activity
   and the Lifespan of Male Fruitflies. A Dataset
   That Gets Attention. Journal of Statistics 
   Education 2(1). 
   
-  ww2.amstat.org/publications/jse/v2n1/datasets.hanley.html.
+source_url:  
+  https://ww2.amstat.org/publications/jse/v2n1/datasets.hanley.html.
   
 description: >
   This dataset provides a simple example of what
   survival and censoring. It provides an inuitive
   explanation of estimation of survival probabilities.
+  
+note:
+  Data is a subset and slightly modified. Additional
+  modifications are made for fly2 and fly3 datasets.  
   
 copyright: >  
   The copyright to this dataset is held by the authors
@@ -25,10 +25,16 @@ copyright: >
   this for individual educational purposes under the
   Fair User provisions of U.S. Copyright laow.
 
-format: 
-  delimiter: no delimiters are needed
-  varnames: not included in the first row of data
-  missing-value-code: Not needed
+format:
+  plain text with no delimiters 
+
+varnames: 
+  not included
+  
+missing-value-code: 
+  not needed
+
+size:
   rows: 25
   columns: 1
 
