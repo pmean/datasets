@@ -12,10 +12,10 @@ description: >
   maximum over four or five cycles. There are
   separate measurements at systole and diastole.
   
-documentation:
+additional_description:
   https://dx.doi.org/10.1016/j.ultrasmedbio.2019.01.007
 
-download:
+download_url:
   https://data.mendeley.com/datasets/y7b6hjnxxj/1
 
 format: 

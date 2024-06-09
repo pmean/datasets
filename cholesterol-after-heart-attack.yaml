@@ -7,7 +7,7 @@ description:
 additional_description:  
   http://www.statsci.org/data/general/cholest.html
 
-download:
+download_url:
   http://www.statsci.org/data/general/cholestg.txt
   www.pmean.com/15/images/day4cholesterol.txt
 ---

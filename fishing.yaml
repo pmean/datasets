@@ -37,12 +37,12 @@ vars:
       6ft: 1
       7ft: 2
       
-  Line
+  Line:
     label: 
       1kg: 1
       2kg: 2
 
-  Sinker
+  Sinker:
     label:
       8oz: 1
       12oz: 2

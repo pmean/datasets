@@ -13,7 +13,6 @@ source: >
   Paul Allison. Survival Analysis Using 
   SAS. A Practical Guide.
   
-additional_source:  
   Henry Bienen and Nicolas van de Walle
   (1991). Of Time and Power.
 
@@ -30,7 +29,7 @@ format:
 varnames:
   first row of data
   
-missing-value-code:
+missing_value_code:
   Not needed
 
 size:

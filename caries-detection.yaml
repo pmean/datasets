@@ -27,7 +27,7 @@ format:
 varnames: 
   first row of data
   
-missing-value-code:
+missing_value_code:
   not needed
   
 size:  

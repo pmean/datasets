@@ -9,7 +9,7 @@ source:
   For the background about this data, please
   refer to transplant-data_dictionary.yaml.
  
-download:
+download_url:
   Please refer to transplant-data_dictionary.yaml
   
 description:
@@ -24,7 +24,7 @@ format:
 varnames: 
   first row of data
   
-missing-value-code:
+missing_value_code:
   not needed
   
 size:  

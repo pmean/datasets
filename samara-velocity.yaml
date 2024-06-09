@@ -2,7 +2,7 @@
 data_dictionary:
   samara.txt
   
-source:
+source: >
   This dataset is part of the Austrasian Data and
   Story Library (OZDASL). Please cite this data as
   Smyth, GK (2011). Australasian Data and Story 
@@ -20,7 +20,7 @@ description: >
   size and weight). The samara disk loading is 
   related to the aerodynamics of helicopters."
   
-download:
+download_url:
   text-format: https://gksmyth.github.io/ozdasl/general/samara.txt
   additional-information: https://gksmyth.github.io/ozdasl/general/samara.html
 
@@ -36,7 +36,7 @@ format:
 varnames: 
   first row of data
   
-missing-value-code: 
+missing_value_code: 
   NA
 
 size:
@@ -54,7 +54,7 @@ vars:
     scale: ratio
     range: positive real
     
-  Velocity
+  Velocity:
     label: Fall velocity
     unit: unknown
 ---

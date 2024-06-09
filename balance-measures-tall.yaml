@@ -16,7 +16,7 @@ download_url:
 format: 
   delimiter: tab
   varnames: first row of data
-  missing-value-code: Not needed
+  missing_value_code: Not needed
   rows: 480
   columns: 8
 

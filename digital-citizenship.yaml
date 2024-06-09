@@ -100,7 +100,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet2:
     label:
       I am able to use digital technologies
@@ -112,7 +112,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+  
   Internet3:
     label:
       I can use the Internet to find information I need
@@ -124,7 +124,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet4:
     label:
       I can use the Internet to find and download applications
@@ -136,7 +136,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet5:
     label:
       I enjoy communicating with others online
@@ -148,7 +148,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet6:
     label:
       I enjoy collaborating with others online more than I do offline
@@ -160,7 +160,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet7:
     label:
       I am more informed with regard to political or social issues
@@ -172,7 +172,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet8:
     label:
       I am more aware of global issues through using the Internet
@@ -184,7 +184,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet9:
     label:
       I post original messages, audio, pictures, or videos
@@ -196,7 +196,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet10:
     label:
       Where possible, I comment on other people’s writings
@@ -208,7 +208,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet11:
     label:
       I regularly post thoughts related to political or social issues online
@@ -220,7 +220,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet12:
     label:
       I express my opinions online to challenge dominant perspectives
@@ -232,7 +232,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet13:
     label:
       I think online participation is an effective way to engage
@@ -244,7 +244,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet14:
     label:
       I belong to online groups that are involved in political or social issues
@@ -256,7 +256,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet15:
     label:
       I sometimes contact government officials
@@ -268,7 +268,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet16:
     label:
       I attend political meetings or public forums
@@ -280,7 +280,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet17:
     label:
       I work or volunteer for a political party
@@ -292,7 +292,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet18:
     label:
       I work with others online to solve
@@ -304,7 +304,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet19:
     label:
       I sign petitions online
@@ -316,7 +316,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet20:
     label:
       I organize petitions online
@@ -328,7 +328,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet21:
     label:
       I am more socially or politically engaged when online
@@ -340,7 +340,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet22:
     label:
       I think online participation promotes offline engagement
@@ -352,7 +352,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet23:
     label:
       I think online participation is an effective way to make a change
@@ -364,7 +364,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet24:
     label:
       I use the Internet in order to participate in social movement/change
@@ -376,7 +376,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet25:
     label:
       I think I am given to rethink my beliefs
@@ -388,7 +388,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet26:
     label:
       I think the Internet reflects biases
@@ -400,7 +400,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Internet27:
     label:
       I am more aware of local issues
@@ -412,7 +412,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person1:
     label:
       I am someone who is reserved
@@ -424,7 +424,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person2:
     label:
       I am someone who is generally trusting
@@ -436,7 +436,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person3:
     label:
       I am someone who tends to be lazy
@@ -448,7 +448,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person4:
     label:
       I am someone who is relaxed
@@ -460,7 +460,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person5:
     label:
       I am someone with relatively few artistic interests
@@ -472,7 +472,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person6:
     label:
       I am someone outgoing and sociable
@@ -484,7 +484,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person7:
     label:
       I am someone who tends to find fault with others
@@ -496,7 +496,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person8:
     label:
       I am someone who tends to do a thorough job
@@ -508,7 +508,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person9:
     label:
       I am someone who gets nervous easily
@@ -520,7 +520,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Person10:
     label:
       I am someone who has an active imagination.
@@ -532,7 +532,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Happy1:
     label:
       I lead a purposeful and meaningful life
@@ -544,7 +544,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Happy2:
     label:
       My social relationships are supportive and rewarding
@@ -556,7 +556,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Happy3:
     label:
       I am engaged and interested in my daily activities
@@ -568,7 +568,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Happy4:
     label:
       I actively contribute to the happiness of others
@@ -580,7 +580,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Happy5:
     label:
       I am competent and capable
@@ -592,7 +592,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Happy6:
     label:
       I am a good person and live a good life
@@ -604,7 +604,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Happy7:
     label:
       I am optimistic about my future
@@ -616,7 +616,7 @@ vars:
       5: Somewhat agree
       6: Agree
       7: Strongly agree
-	  
+
   Happy8:
     label:
       People respect me

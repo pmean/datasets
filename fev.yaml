@@ -1,24 +1,20 @@
 ---
 data_dictionary: fev.txt
 
-author:
-  Steve Simon wrote this data dictionary on 2021-03-02.
-  
-copyright:
+copyright: >
   The author of the jse article holds the copyright, but does not list
   conditions under which it can be used. Individual use for educational
   purposes is probably permitted under the Fair Use provisions of
   U.S. Copyright laws.
 
-description:
+description: >
   Forced Expiratory Volume (FEV) in children
 
 additional_description:
   http://jse.amstat.org/datasets/fev.txt
 
-download:
+download_url:
   http://www.amstat.org/publications/jse/datasets/fev.dat.txt
-  http://www.pmean.com/15/images/day3fev.txt
 
 format:
   space-delimited
@@ -26,7 +22,7 @@ format:
 varnames: 
   not included
   
-missing-value-code:
+missing_value_code:
   not needed
   
 size:   

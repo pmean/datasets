@@ -17,7 +17,7 @@ description:
 additional_description:
   http://www.amstat.org/publications/jse/v19n1/gardasil.txt
   
-download:
+download_url:
   http://www.amstat.org/publications/jse/v19n1/gardasil.xls
   http://www.pmean.com/15/images/day2gardasil.csv
   
@@ -33,7 +33,7 @@ format:
 varnames:
  first row of data
 
-missing-value-code:
+missing_value_code:
   not needed
 
 size:

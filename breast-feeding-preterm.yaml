@@ -21,7 +21,7 @@ format:
 varnames: 
   first row of data
   
-missing-value-code:
+missing_value_code:
   A space between two commas
 
 size:

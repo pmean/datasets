@@ -7,7 +7,7 @@ format:
 varnames: 
   first row of data
 
-missing-value-code: 
+missing_value_code: 
   .
   
 size:  
@@ -48,14 +48,12 @@ vars:
       yes = 1
       no = 0
       
-  corner_lot
+  corner_lot:
     label: Is the house on a corner lot?
     scale: binary
     value:
       yes = 1
       no = 0
-
-creation_date: 2021-11-08
 
 description:
   House prices in Albuquerque in 1994.
@@ -63,7 +61,7 @@ description:
 additional_description:
   http://www.pmean.com/00files/housing.htm
 
-download:
+download_url:
   https://github.com/pmean/introduction-to-sas/data/housing.txt
   
 source: 

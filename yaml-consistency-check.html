@@ -3077,54 +3077,78 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  dictionaries[[yaml_roots[i]]] <span class="ot">&lt;-</span> </span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">read_yaml</span>(yaml_files[i])</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in yaml.load(string, error.label = error.label, ...): NAs introduced by
+coercion: . is not a real</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in readLines(file, warn = readLines.warn): incomplete final line found
+on &#39;caries-detection.yaml&#39;</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in readLines(file, warn = readLines.warn): incomplete final line found
+on &#39;collaborative-consumption.yaml&#39;</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in readLines(file, warn = readLines.warn): incomplete final line found
+on &#39;fishing.yaml&#39;</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in readLines(file, warn = readLines.warn): incomplete final line found
+on &#39;fly1.yaml&#39;</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in readLines(file, warn = readLines.warn): incomplete final line found
+on &#39;sharing.yaml&#39;</code></pre>
+</div>
 </div>
 </section>
 <section id="check-first-level-names" class="level2">
 <h2 class="anchored" data-anchor-id="check-first-level-names">Check first level names</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>recommended_fields <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;data_dictionary&quot;</span>,</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;description&quot;</span>,</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;additional_description&quot;</span>,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;note&quot;</span>,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;source&quot;</span>,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;source_url&quot;</span>,</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;repository&quot;</span>,</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;repository_url&quot;</span>,</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;download_url&quot;</span>,</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;copyright&quot;</span>,</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;format&quot;</span>,</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;varnames&quot;</span>,</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;missing_value_code&quot;</span>,</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;size&quot;</span>,</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;vars&quot;</span>)</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>all_names <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">fields=</span>recommended_fields,</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">field_order=</span><span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(recommended_fields))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>recommended_fields <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;data_dictionary&quot;</span>,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;description&quot;</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;additional_description&quot;</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;note&quot;</span>,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;source&quot;</span>,</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;source_url&quot;</span>,</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;repository&quot;</span>,</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;repository_url&quot;</span>,</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;download_url&quot;</span>,</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;copyright&quot;</span>,</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;format&quot;</span>,</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;varnames&quot;</span>,</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;missing_value_code&quot;</span>,</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;size&quot;</span>,</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;vars&quot;</span>)</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>all_names <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">fields=</span>recommended_fields,</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">field_order=</span><span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(recommended_fields))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>yaml_aggregate <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (yaml_root <span class="cf">in</span> yaml_roots) {</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  dictionary <span class="ot">&lt;-</span> dictionaries[[yaml_root]]</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  dd_names <span class="ot">&lt;-</span> <span class="fu">names</span>(dictionary)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  yaml_aggregate <span class="sc">%&lt;&gt;%</span> </span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">bind_rows</span>(</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">data.frame</span>(</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">files=</span>yaml_root, </span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">fields=</span><span class="fu">names</span>(dictionary)))</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>yaml_aggregate <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (yaml_root <span class="cf">in</span> yaml_roots) {</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  dictionary <span class="ot">&lt;-</span> dictionaries[[yaml_root]]</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  dd_names <span class="ot">&lt;-</span> <span class="fu">names</span>(dictionary)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  yaml_aggregate <span class="sc">%&lt;&gt;%</span> </span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">bind_rows</span>(</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">data.frame</span>(</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">files=</span>yaml_root, </span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">fields=</span><span class="fu">names</span>(dictionary)))</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (yaml_root <span class="cf">in</span> yaml_roots) {</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  yaml_aggregate <span class="sc">%&gt;%</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(files<span class="sc">==</span>yaml_root) <span class="sc">%&gt;%</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">full_join</span>(all_names, <span class="at">by=</span><span class="st">&quot;fields&quot;</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(fields, field_order, files) <span class="sc">%&gt;%</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(field_order) <span class="sc">%&gt;%</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    print</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n\n</span><span class="st">&quot;</span>)</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (yaml_root <span class="cf">in</span> yaml_roots) {</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  yaml_aggregate <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(files<span class="sc">==</span>yaml_root) <span class="sc">%&gt;%</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">full_join</span>(all_names, <span class="at">by=</span><span class="st">&quot;fields&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(fields, field_order, files) <span class="sc">%&gt;%</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(field_order) <span class="sc">%&gt;%</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    print</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n\n</span><span class="st">&quot;</span>)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                   fields field_order           files
 1         data_dictionary           1 absorbent-paper
@@ -3143,6 +3167,40 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 14                   size          14 absorbent-paper
 15                   vars          15 absorbent-paper
 
+                   fields field_order           files
+1         data_dictionary           1 airline-bumping
+2             description           2 airline-bumping
+3  additional_description           3 airline-bumping
+4                    note           4            &lt;NA&gt;
+5                  source           5 airline-bumping
+6              source_url           6            &lt;NA&gt;
+7              repository           7            &lt;NA&gt;
+8          repository_url           8            &lt;NA&gt;
+9            download_url           9 airline-bumping
+10              copyright          10 airline-bumping
+11                 format          11 airline-bumping
+12               varnames          12 airline-bumping
+13     missing_value_code          13 airline-bumping
+14                   size          14 airline-bumping
+15                   vars          15 airline-bumping
+
+                   fields field_order               files
+1         data_dictionary           1 albuquerque-housing
+2             description           2 albuquerque-housing
+3  additional_description           3 albuquerque-housing
+4                    note           4                &lt;NA&gt;
+5                  source           5 albuquerque-housing
+6              source_url           6                &lt;NA&gt;
+7              repository           7                &lt;NA&gt;
+8          repository_url           8                &lt;NA&gt;
+9            download_url           9 albuquerque-housing
+10              copyright          10 albuquerque-housing
+11                 format          11 albuquerque-housing
+12               varnames          12 albuquerque-housing
+13     missing_value_code          13 albuquerque-housing
+14                   size          14 albuquerque-housing
+15                   vars          15 albuquerque-housing
+
                    fields field_order                files
 1         data_dictionary           1 art-malpresentations
 2             description           2 art-malpresentations
@@ -3160,39 +3218,363 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 14                   size          14 art-malpresentations
 15                   vars          15 art-malpresentations
 
-                   fields field_order      files
-1         data_dictionary           1 cigarettes
-2             description           2 cigarettes
-3  additional_description           3 cigarettes
-4                    note           4 cigarettes
-5                  source           5 cigarettes
-6              source_url           6 cigarettes
-7              repository           7       &lt;NA&gt;
-8          repository_url           8       &lt;NA&gt;
-9            download_url           9 cigarettes
-10              copyright          10 cigarettes
-11                 format          11 cigarettes
-12               varnames          12 cigarettes
-13     missing_value_code          13 cigarettes
-14                   size          14 cigarettes
-15                   vars          15 cigarettes
+                   fields field_order             files
+1         data_dictionary           1 back-pain-runners
+2             description           2 back-pain-runners
+3  additional_description           3 back-pain-runners
+4                    note           4 back-pain-runners
+5                  source           5              &lt;NA&gt;
+6              source_url           6              &lt;NA&gt;
+7              repository           7              &lt;NA&gt;
+8          repository_url           8              &lt;NA&gt;
+9            download_url           9 back-pain-runners
+10              copyright          10 back-pain-runners
+11                 format          11 back-pain-runners
+12               varnames          12 back-pain-runners
+13     missing_value_code          13 back-pain-runners
+14                   size          14 back-pain-runners
+15                   vars          15 back-pain-runners
+
+                   fields field_order                 files
+1         data_dictionary           1 balance-measures-tall
+2             description           2 balance-measures-tall
+3  additional_description           3                  &lt;NA&gt;
+4                    note           4                  &lt;NA&gt;
+5                  source           5 balance-measures-tall
+6              source_url           6                  &lt;NA&gt;
+7              repository           7                  &lt;NA&gt;
+8          repository_url           8                  &lt;NA&gt;
+9            download_url           9 balance-measures-tall
+10              copyright          10 balance-measures-tall
+11                 format          11 balance-measures-tall
+12               varnames          12                  &lt;NA&gt;
+13     missing_value_code          13                  &lt;NA&gt;
+14                   size          14                  &lt;NA&gt;
+15                   vars          15 balance-measures-tall
+
+                   fields field_order                 files
+1         data_dictionary           1 balance-measures-wide
+2             description           2 balance-measures-wide
+3  additional_description           3 balance-measures-wide
+4                    note           4 balance-measures-wide
+5                  source           5 balance-measures-wide
+6              source_url           6 balance-measures-wide
+7              repository           7 balance-measures-wide
+8          repository_url           8 balance-measures-wide
+9            download_url           9 balance-measures-wide
+10              copyright          10 balance-measures-wide
+11                 format          11 balance-measures-wide
+12               varnames          12 balance-measures-wide
+13     missing_value_code          13 balance-measures-wide
+14                   size          14 balance-measures-wide
+15                   vars          15 balance-measures-wide
+
+                   fields field_order           files
+1         data_dictionary           1 body-dimensions
+2             description           2 body-dimensions
+3  additional_description           3 body-dimensions
+4                    note           4            &lt;NA&gt;
+5                  source           5            &lt;NA&gt;
+6              source_url           6            &lt;NA&gt;
+7              repository           7            &lt;NA&gt;
+8          repository_url           8            &lt;NA&gt;
+9            download_url           9 body-dimensions
+10              copyright          10 body-dimensions
+11                 format          11 body-dimensions
+12               varnames          12 body-dimensions
+13     missing_value_code          13 body-dimensions
+14                   size          14 body-dimensions
+15                   vars          15            &lt;NA&gt;
+
+                   fields field_order                  files
+1         data_dictionary           1 breast-feeding-preterm
+2             description           2 breast-feeding-preterm
+3  additional_description           3                   &lt;NA&gt;
+4                    note           4                   &lt;NA&gt;
+5                  source           5                   &lt;NA&gt;
+6              source_url           6                   &lt;NA&gt;
+7              repository           7                   &lt;NA&gt;
+8          repository_url           8                   &lt;NA&gt;
+9            download_url           9                   &lt;NA&gt;
+10              copyright          10 breast-feeding-preterm
+11                 format          11 breast-feeding-preterm
+12               varnames          12 breast-feeding-preterm
+13     missing_value_code          13 breast-feeding-preterm
+14                   size          14 breast-feeding-preterm
+15                   vars          15 breast-feeding-preterm
+
+                   fields field_order           files
+1         data_dictionary           1 burger-calories
+2             description           2 burger-calories
+3  additional_description           3            &lt;NA&gt;
+4                    note           4            &lt;NA&gt;
+5                  source           5 burger-calories
+6              source_url           6            &lt;NA&gt;
+7              repository           7 burger-calories
+8          repository_url           8 burger-calories
+9            download_url           9 burger-calories
+10              copyright          10 burger-calories
+11                 format          11 burger-calories
+12               varnames          12 burger-calories
+13     missing_value_code          13 burger-calories
+14                   size          14 burger-calories
+15                   vars          15 burger-calories
+16 additional-description          NA burger-calories
+
+                   fields field_order            files
+1         data_dictionary           1 caries-detection
+2             description           2 caries-detection
+3  additional_description           3             &lt;NA&gt;
+4                    note           4             &lt;NA&gt;
+5                  source           5 caries-detection
+6              source_url           6             &lt;NA&gt;
+7              repository           7             &lt;NA&gt;
+8          repository_url           8             &lt;NA&gt;
+9            download_url           9             &lt;NA&gt;
+10              copyright          10 caries-detection
+11                 format          11 caries-detection
+12               varnames          12 caries-detection
+13     missing_value_code          13 caries-detection
+14                   size          14 caries-detection
+15                   vars          15 caries-detection
+
+                   fields field_order          files
+1         data_dictionary           1 carotid-plaque
+2             description           2 carotid-plaque
+3  additional_description           3 carotid-plaque
+4                    note           4 carotid-plaque
+5                  source           5           &lt;NA&gt;
+6              source_url           6           &lt;NA&gt;
+7              repository           7           &lt;NA&gt;
+8          repository_url           8           &lt;NA&gt;
+9            download_url           9 carotid-plaque
+10              copyright          10           &lt;NA&gt;
+11                 format          11 carotid-plaque
+12               varnames          12           &lt;NA&gt;
+13     missing_value_code          13           &lt;NA&gt;
+14                   size          14           &lt;NA&gt;
+15                   vars          15 carotid-plaque
+
+                   fields field_order                          files
+1         data_dictionary           1 cholesterol-after-heart-attack
+2             description           2 cholesterol-after-heart-attack
+3  additional_description           3 cholesterol-after-heart-attack
+4                    note           4                           &lt;NA&gt;
+5                  source           5                           &lt;NA&gt;
+6              source_url           6                           &lt;NA&gt;
+7              repository           7                           &lt;NA&gt;
+8          repository_url           8                           &lt;NA&gt;
+9            download_url           9 cholesterol-after-heart-attack
+10              copyright          10                           &lt;NA&gt;
+11                 format          11                           &lt;NA&gt;
+12               varnames          12                           &lt;NA&gt;
+13     missing_value_code          13                           &lt;NA&gt;
+14                   size          14                           &lt;NA&gt;
+15                   vars          15                           &lt;NA&gt;
+
+                   fields field_order                  files
+1         data_dictionary           1 cigarette-measurements
+2             description           2 cigarette-measurements
+3  additional_description           3 cigarette-measurements
+4                    note           4 cigarette-measurements
+5                  source           5 cigarette-measurements
+6              source_url           6 cigarette-measurements
+7              repository           7                   &lt;NA&gt;
+8          repository_url           8                   &lt;NA&gt;
+9            download_url           9 cigarette-measurements
+10              copyright          10 cigarette-measurements
+11                 format          11 cigarette-measurements
+12               varnames          12 cigarette-measurements
+13     missing_value_code          13 cigarette-measurements
+14                   size          14 cigarette-measurements
+15                   vars          15 cigarette-measurements
+
+                   fields field_order                     files
+1         data_dictionary           1 collaborative-consumption
+2             description           2 collaborative-consumption
+3  additional_description           3                      &lt;NA&gt;
+4                    note           4                      &lt;NA&gt;
+5                  source           5 collaborative-consumption
+6              source_url           6                      &lt;NA&gt;
+7              repository           7                      &lt;NA&gt;
+8          repository_url           8                      &lt;NA&gt;
+9            download_url           9                      &lt;NA&gt;
+10              copyright          10 collaborative-consumption
+11                 format          11 collaborative-consumption
+12               varnames          12 collaborative-consumption
+13     missing_value_code          13 collaborative-consumption
+14                   size          14 collaborative-consumption
+15                   vars          15 collaborative-consumption
+
+                   fields field_order         files
+1         data_dictionary           1 cracker-bloat
+2             description           2 cracker-bloat
+3  additional_description           3 cracker-bloat
+4                    note           4          &lt;NA&gt;
+5                  source           5 cracker-bloat
+6              source_url           6          &lt;NA&gt;
+7              repository           7          &lt;NA&gt;
+8          repository_url           8          &lt;NA&gt;
+9            download_url           9 cracker-bloat
+10              copyright          10 cracker-bloat
+11                 format          11 cracker-bloat
+12               varnames          12          &lt;NA&gt;
+13     missing_value_code          13          &lt;NA&gt;
+14                   size          14          &lt;NA&gt;
+15                   vars          15 cracker-bloat
+
+                   fields field_order         files
+1         data_dictionary           1 cracker-fiber
+2             description           2 cracker-fiber
+3  additional_description           3 cracker-fiber
+4                    note           4          &lt;NA&gt;
+5                  source           5          &lt;NA&gt;
+6              source_url           6          &lt;NA&gt;
+7              repository           7          &lt;NA&gt;
+8          repository_url           8          &lt;NA&gt;
+9            download_url           9          &lt;NA&gt;
+10              copyright          10          &lt;NA&gt;
+11                 format          11          &lt;NA&gt;
+12               varnames          12          &lt;NA&gt;
+13     missing_value_code          13          &lt;NA&gt;
+14                   size          14          &lt;NA&gt;
+15                   vars          15          &lt;NA&gt;
+
+                   fields field_order                       files
+1         data_dictionary           1 digital-citizenship-revised
+2             description           2 digital-citizenship-revised
+3  additional_description           3                        &lt;NA&gt;
+4                    note           4 digital-citizenship-revised
+5                  source           5 digital-citizenship-revised
+6              source_url           6                        &lt;NA&gt;
+7              repository           7                        &lt;NA&gt;
+8          repository_url           8                        &lt;NA&gt;
+9            download_url           9                        &lt;NA&gt;
+10              copyright          10 digital-citizenship-revised
+11                 format          11 digital-citizenship-revised
+12               varnames          12                        &lt;NA&gt;
+13     missing_value_code          13                        &lt;NA&gt;
+14                   size          14 digital-citizenship-revised
+15                   vars          15 digital-citizenship-revised
+
+                   fields field_order               files
+1         data_dictionary           1 digital-citizenship
+2             description           2 digital-citizenship
+3  additional_description           3                &lt;NA&gt;
+4                    note           4 digital-citizenship
+5                  source           5 digital-citizenship
+6              source_url           6                &lt;NA&gt;
+7              repository           7                &lt;NA&gt;
+8          repository_url           8                &lt;NA&gt;
+9            download_url           9                &lt;NA&gt;
+10              copyright          10 digital-citizenship
+11                 format          11 digital-citizenship
+12               varnames          12                &lt;NA&gt;
+13     missing_value_code          13                &lt;NA&gt;
+14                   size          14 digital-citizenship
+15                   vars          15 digital-citizenship
+
+                   fields field_order  files
+1         data_dictionary           1 energy
+2             description           2 energy
+3  additional_description           3 energy
+4                    note           4   &lt;NA&gt;
+5                  source           5 energy
+6              source_url           6   &lt;NA&gt;
+7              repository           7   &lt;NA&gt;
+8          repository_url           8   &lt;NA&gt;
+9            download_url           9 energy
+10              copyright          10 energy
+11                 format          11 energy
+12               varnames          12 energy
+13     missing_value_code          13 energy
+14                   size          14 energy
+15                   vars          15 energy
 
                    fields field_order    files
-1         data_dictionary           1 diamonds
-2             description           2 diamonds
-3  additional_description           3 diamonds
+1         data_dictionary           1 energy01
+2             description           2 energy01
+3  additional_description           3 energy01
 4                    note           4     &lt;NA&gt;
-5                  source           5 diamonds
+5                  source           5 energy01
 6              source_url           6     &lt;NA&gt;
-7              repository           7 diamonds
-8          repository_url           8 diamonds
-9            download_url           9 diamonds
-10              copyright          10 diamonds
-11                 format          11 diamonds
-12               varnames          12 diamonds
-13     missing_value_code          13 diamonds
-14                   size          14 diamonds
-15                   vars          15 diamonds
+7              repository           7     &lt;NA&gt;
+8          repository_url           8     &lt;NA&gt;
+9            download_url           9 energy01
+10              copyright          10 energy01
+11                 format          11 energy01
+12               varnames          12 energy01
+13     missing_value_code          13     &lt;NA&gt;
+14                   size          14     &lt;NA&gt;
+15                   vars          15     &lt;NA&gt;
+
+                   fields field_order    files
+1         data_dictionary           1 energy02
+2             description           2 energy02
+3  additional_description           3     &lt;NA&gt;
+4                    note           4     &lt;NA&gt;
+5                  source           5     &lt;NA&gt;
+6              source_url           6     &lt;NA&gt;
+7              repository           7     &lt;NA&gt;
+8          repository_url           8     &lt;NA&gt;
+9            download_url           9     &lt;NA&gt;
+10              copyright          10     &lt;NA&gt;
+11                 format          11 energy02
+12               varnames          12 energy02
+13     missing_value_code          13     &lt;NA&gt;
+14                   size          14     &lt;NA&gt;
+15                   vars          15     &lt;NA&gt;
+
+                   fields field_order    files
+1         data_dictionary           1 energy03
+2             description           2 energy03
+3  additional_description           3     &lt;NA&gt;
+4                    note           4     &lt;NA&gt;
+5                  source           5     &lt;NA&gt;
+6              source_url           6     &lt;NA&gt;
+7              repository           7     &lt;NA&gt;
+8          repository_url           8     &lt;NA&gt;
+9            download_url           9     &lt;NA&gt;
+10              copyright          10     &lt;NA&gt;
+11                 format          11 energy03
+12               varnames          12 energy03
+13     missing_value_code          13     &lt;NA&gt;
+14                   size          14     &lt;NA&gt;
+15                   vars          15     &lt;NA&gt;
+
+                   fields field_order    files
+1         data_dictionary           1 energy04
+2             description           2 energy04
+3  additional_description           3     &lt;NA&gt;
+4                    note           4     &lt;NA&gt;
+5                  source           5     &lt;NA&gt;
+6              source_url           6     &lt;NA&gt;
+7              repository           7     &lt;NA&gt;
+8          repository_url           8     &lt;NA&gt;
+9            download_url           9     &lt;NA&gt;
+10              copyright          10     &lt;NA&gt;
+11                 format          11 energy04
+12               varnames          12 energy04
+13     missing_value_code          13     &lt;NA&gt;
+14                   size          14     &lt;NA&gt;
+15                   vars          15     &lt;NA&gt;
+
+                   fields field_order             files
+1         data_dictionary           1 exercise-programs
+2             description           2 exercise-programs
+3  additional_description           3              &lt;NA&gt;
+4                    note           4              &lt;NA&gt;
+5                  source           5 exercise-programs
+6              source_url           6              &lt;NA&gt;
+7              repository           7              &lt;NA&gt;
+8          repository_url           8              &lt;NA&gt;
+9            download_url           9              &lt;NA&gt;
+10              copyright          10 exercise-programs
+11                 format          11 exercise-programs
+12               varnames          12              &lt;NA&gt;
+13     missing_value_code          13              &lt;NA&gt;
+14                   size          14              &lt;NA&gt;
+15                   vars          15 exercise-programs
 
                    fields field_order           files
 1         data_dictionary           1 fasting-turtles
@@ -3228,6 +3610,126 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 14                   size          14   fat
 15                   vars          15   fat
 
+                   fields field_order files
+1         data_dictionary           1   fev
+2             description           2   fev
+3  additional_description           3   fev
+4                    note           4  &lt;NA&gt;
+5                  source           5  &lt;NA&gt;
+6              source_url           6  &lt;NA&gt;
+7              repository           7  &lt;NA&gt;
+8          repository_url           8  &lt;NA&gt;
+9            download_url           9   fev
+10              copyright          10   fev
+11                 format          11   fev
+12               varnames          12   fev
+13     missing_value_code          13   fev
+14                   size          14   fev
+15                   vars          15   fev
+
+                   fields field_order   files
+1         data_dictionary           1 fishing
+2             description           2 fishing
+3  additional_description           3    &lt;NA&gt;
+4                    note           4    &lt;NA&gt;
+5                  source           5    &lt;NA&gt;
+6              source_url           6    &lt;NA&gt;
+7              repository           7    &lt;NA&gt;
+8          repository_url           8    &lt;NA&gt;
+9            download_url           9    &lt;NA&gt;
+10              copyright          10 fishing
+11                 format          11 fishing
+12               varnames          12 fishing
+13     missing_value_code          13    &lt;NA&gt;
+14                   size          14 fishing
+15                   vars          15 fishing
+16                 Source          NA fishing
+
+                   fields field_order files
+1         data_dictionary           1  fly1
+2             description           2  fly1
+3  additional_description           3  &lt;NA&gt;
+4                    note           4  fly1
+5                  source           5  fly1
+6              source_url           6  fly1
+7              repository           7  &lt;NA&gt;
+8          repository_url           8  &lt;NA&gt;
+9            download_url           9  &lt;NA&gt;
+10              copyright          10  fly1
+11                 format          11  fly1
+12               varnames          12  fly1
+13     missing_value_code          13  fly1
+14                   size          14  fly1
+15                   vars          15  fly1
+
+                   fields field_order files
+1         data_dictionary           1  fly2
+2             description           2  fly2
+3  additional_description           3  &lt;NA&gt;
+4                    note           4  &lt;NA&gt;
+5                  source           5  &lt;NA&gt;
+6              source_url           6  &lt;NA&gt;
+7              repository           7  &lt;NA&gt;
+8          repository_url           8  &lt;NA&gt;
+9            download_url           9  &lt;NA&gt;
+10              copyright          10  &lt;NA&gt;
+11                 format          11  fly2
+12               varnames          12  fly2
+13     missing_value_code          13  fly2
+14                   size          14  fly2
+15                   vars          15  fly2
+
+                   fields field_order files
+1         data_dictionary           1  fly3
+2             description           2  fly3
+3  additional_description           3  &lt;NA&gt;
+4                    note           4  &lt;NA&gt;
+5                  source           5  &lt;NA&gt;
+6              source_url           6  &lt;NA&gt;
+7              repository           7  &lt;NA&gt;
+8          repository_url           8  &lt;NA&gt;
+9            download_url           9  &lt;NA&gt;
+10              copyright          10  &lt;NA&gt;
+11                 format          11  fly3
+12               varnames          12  fly3
+13     missing_value_code          13  fly3
+14                   size          14  fly3
+15                   vars          15  fly3
+
+                   fields field_order                   files
+1         data_dictionary           1 full-moon-er-admissions
+2             description           2 full-moon-er-admissions
+3  additional_description           3 full-moon-er-admissions
+4                    note           4                    &lt;NA&gt;
+5                  source           5 full-moon-er-admissions
+6              source_url           6                    &lt;NA&gt;
+7              repository           7                    &lt;NA&gt;
+8          repository_url           8                    &lt;NA&gt;
+9            download_url           9                    &lt;NA&gt;
+10              copyright          10 full-moon-er-admissions
+11                 format          11 full-moon-er-admissions
+12               varnames          12 full-moon-er-admissions
+13     missing_value_code          13                    &lt;NA&gt;
+14                   size          14 full-moon-er-admissions
+15                   vars          15 full-moon-er-admissions
+
+                   fields field_order    files
+1         data_dictionary           1 gardasil
+2             description           2 gardasil
+3  additional_description           3 gardasil
+4                    note           4     &lt;NA&gt;
+5                  source           5 gardasil
+6              source_url           6     &lt;NA&gt;
+7              repository           7     &lt;NA&gt;
+8          repository_url           8     &lt;NA&gt;
+9            download_url           9 gardasil
+10              copyright          10 gardasil
+11                 format          11 gardasil
+12               varnames          12 gardasil
+13     missing_value_code          13 gardasil
+14                   size          14 gardasil
+15                   vars          15 gardasil
+
                    fields field_order        files
 1         data_dictionary           1 glycyrrhizin
 2             description           2 glycyrrhizin
@@ -3244,6 +3746,41 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 13     missing_value_code          13 glycyrrhizin
 14                   size          14 glycyrrhizin
 15                   vars          15 glycyrrhizin
+
+                   fields field_order     files
+1         data_dictionary           1 grace1000
+2             description           2 grace1000
+3  additional_description           3      &lt;NA&gt;
+4                    note           4 grace1000
+5                  source           5 grace1000
+6              source_url           6      &lt;NA&gt;
+7              repository           7      &lt;NA&gt;
+8          repository_url           8      &lt;NA&gt;
+9            download_url           9 grace1000
+10              copyright          10      &lt;NA&gt;
+11                 format          11 grace1000
+12               varnames          12 grace1000
+13     missing_value_code          13 grace1000
+14                   size          14 grace1000
+15                   vars          15 grace1000
+
+                   fields field_order  files
+1         data_dictionary           1 heroin
+2             description           2 heroin
+3  additional_description           3   &lt;NA&gt;
+4                    note           4   &lt;NA&gt;
+5                  source           5 heroin
+6              source_url           6   &lt;NA&gt;
+7              repository           7   &lt;NA&gt;
+8          repository_url           8   &lt;NA&gt;
+9            download_url           9   &lt;NA&gt;
+10              copyright          10 heroin
+11                 format          11 heroin
+12               varnames          12 heroin
+13     missing_value_code          13 heroin
+14                   size          14 heroin
+15                   vars          15 heroin
+16                   Note          NA heroin
 
                    fields field_order            files
 1         data_dictionary           1 hiv-intervention
@@ -3262,13 +3799,30 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 14                   size          14 hiv-intervention
 15                   vars          15 hiv-intervention
 
+                   fields field_order  files
+1         data_dictionary           1 leader
+2             description           2 leader
+3  additional_description           3   &lt;NA&gt;
+4                    note           4   &lt;NA&gt;
+5                  source           5 leader
+6              source_url           6   &lt;NA&gt;
+7              repository           7   &lt;NA&gt;
+8          repository_url           8   &lt;NA&gt;
+9            download_url           9   &lt;NA&gt;
+10              copyright          10 leader
+11                 format          11 leader
+12               varnames          12 leader
+13     missing_value_code          13 leader
+14                   size          14 leader
+15                   vars          15 leader
+
                    fields field_order          files
 1         data_dictionary           1 litter-weights
 2             description           2 litter-weights
 3  additional_description           3           &lt;NA&gt;
-4                    note           4           &lt;NA&gt;
+4                    note           4 litter-weights
 5                  source           5 litter-weights
-6              source_url           6           &lt;NA&gt;
+6              source_url           6 litter-weights
 7              repository           7           &lt;NA&gt;
 8          repository_url           8           &lt;NA&gt;
 9            download_url           9           &lt;NA&gt;
@@ -3278,6 +3832,193 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 13     missing_value_code          13 litter-weights
 14                   size          14 litter-weights
 15                   vars          15 litter-weights
+
+                   fields field_order             files
+1         data_dictionary           1 module02-datasets
+2             description           2 module02-datasets
+3  additional_description           3              &lt;NA&gt;
+4                    note           4              &lt;NA&gt;
+5                  source           5              &lt;NA&gt;
+6              source_url           6              &lt;NA&gt;
+7              repository           7              &lt;NA&gt;
+8          repository_url           8              &lt;NA&gt;
+9            download_url           9              &lt;NA&gt;
+10              copyright          10              &lt;NA&gt;
+11                 format          11              &lt;NA&gt;
+12               varnames          12              &lt;NA&gt;
+13     missing_value_code          13              &lt;NA&gt;
+14                   size          14              &lt;NA&gt;
+15                   vars          15              &lt;NA&gt;
+
+                   fields field_order files
+1         data_dictionary           1  moon
+2             description           2  moon
+3  additional_description           3  moon
+4                    note           4  &lt;NA&gt;
+5                  source           5  &lt;NA&gt;
+6              source_url           6  &lt;NA&gt;
+7              repository           7  moon
+8          repository_url           8  moon
+9            download_url           9  moon
+10              copyright          10  moon
+11                 format          11  moon
+12               varnames          12  moon
+13     missing_value_code          13  moon
+14                   size          14  moon
+15                   vars          15  moon
+
+                   fields field_order                  files
+1         data_dictionary           1 psychiatric-discharges
+2             description           2 psychiatric-discharges
+3  additional_description           3                   &lt;NA&gt;
+4                    note           4                   &lt;NA&gt;
+5                  source           5 psychiatric-discharges
+6              source_url           6                   &lt;NA&gt;
+7              repository           7                   &lt;NA&gt;
+8          repository_url           8                   &lt;NA&gt;
+9            download_url           9 psychiatric-discharges
+10              copyright          10 psychiatric-discharges
+11                 format          11 psychiatric-discharges
+12               varnames          12 psychiatric-discharges
+13     missing_value_code          13 psychiatric-discharges
+14                   size          14 psychiatric-discharges
+15                   vars          15 psychiatric-discharges
+
+                   fields field_order files
+1         data_dictionary           1 quake
+2             description           2 quake
+3  additional_description           3 quake
+4                    note           4  &lt;NA&gt;
+5                  source           5  &lt;NA&gt;
+6              source_url           6  &lt;NA&gt;
+7              repository           7  &lt;NA&gt;
+8          repository_url           8  &lt;NA&gt;
+9            download_url           9 quake
+10              copyright          10  &lt;NA&gt;
+11                 format          11  &lt;NA&gt;
+12               varnames          12  &lt;NA&gt;
+13     missing_value_code          13  &lt;NA&gt;
+14                   size          14  &lt;NA&gt;
+15                   vars          15  &lt;NA&gt;
+
+                   fields field_order      files
+1         data_dictionary           1 rat-litter
+2             description           2 rat-litter
+3  additional_description           3       &lt;NA&gt;
+4                    note           4       &lt;NA&gt;
+5                  source           5 rat-litter
+6              source_url           6       &lt;NA&gt;
+7              repository           7       &lt;NA&gt;
+8          repository_url           8       &lt;NA&gt;
+9            download_url           9       &lt;NA&gt;
+10              copyright          10 rat-litter
+11                 format          11 rat-litter
+12               varnames          12 rat-litter
+13     missing_value_code          13 rat-litter
+14                   size          14 rat-litter
+15                   vars          15 rat-litter
+
+                   fields field_order           files
+1         data_dictionary           1 samara-velocity
+2             description           2 samara-velocity
+3  additional_description           3            &lt;NA&gt;
+4                    note           4            &lt;NA&gt;
+5                  source           5 samara-velocity
+6              source_url           6            &lt;NA&gt;
+7              repository           7            &lt;NA&gt;
+8          repository_url           8            &lt;NA&gt;
+9            download_url           9 samara-velocity
+10              copyright          10 samara-velocity
+11                 format          11 samara-velocity
+12               varnames          12 samara-velocity
+13     missing_value_code          13 samara-velocity
+14                   size          14 samara-velocity
+15                   vars          15 samara-velocity
+
+                   fields field_order   files
+1         data_dictionary           1 sharing
+2             description           2 sharing
+3  additional_description           3    &lt;NA&gt;
+4                    note           4    &lt;NA&gt;
+5                  source           5 sharing
+6              source_url           6    &lt;NA&gt;
+7              repository           7    &lt;NA&gt;
+8          repository_url           8    &lt;NA&gt;
+9            download_url           9    &lt;NA&gt;
+10              copyright          10 sharing
+11                 format          11 sharing
+12               varnames          12 sharing
+13     missing_value_code          13 sharing
+14                   size          14 sharing
+15                   vars          15 sharing
+
+                   fields field_order                    files
+1         data_dictionary           1 signapore-diamond-prices
+2             description           2 signapore-diamond-prices
+3  additional_description           3 signapore-diamond-prices
+4                    note           4                     &lt;NA&gt;
+5                  source           5 signapore-diamond-prices
+6              source_url           6                     &lt;NA&gt;
+7              repository           7 signapore-diamond-prices
+8          repository_url           8 signapore-diamond-prices
+9            download_url           9 signapore-diamond-prices
+10              copyright          10 signapore-diamond-prices
+11                 format          11 signapore-diamond-prices
+12               varnames          12 signapore-diamond-prices
+13     missing_value_code          13 signapore-diamond-prices
+14                   size          14 signapore-diamond-prices
+15                   vars          15 signapore-diamond-prices
+
+                   fields field_order files
+1         data_dictionary           1 sleep
+2             description           2 sleep
+3  additional_description           3  &lt;NA&gt;
+4                    note           4  &lt;NA&gt;
+5                  source           5 sleep
+6              source_url           6  &lt;NA&gt;
+7              repository           7  &lt;NA&gt;
+8          repository_url           8  &lt;NA&gt;
+9            download_url           9 sleep
+10              copyright          10 sleep
+11                 format          11 sleep
+12               varnames          12  &lt;NA&gt;
+13     missing_value_code          13  &lt;NA&gt;
+14                   size          14  &lt;NA&gt;
+15                   vars          15 sleep
+
+                   fields field_order       files
+1         data_dictionary           1 swim-speeds
+2             description           2 swim-speeds
+3  additional_description           3        &lt;NA&gt;
+4                    note           4        &lt;NA&gt;
+5                  source           5 swim-speeds
+6              source_url           6        &lt;NA&gt;
+7              repository           7        &lt;NA&gt;
+8          repository_url           8        &lt;NA&gt;
+9            download_url           9        &lt;NA&gt;
+10              copyright          10 swim-speeds
+11                 format          11        &lt;NA&gt;
+12               varnames          12        &lt;NA&gt;
+13     missing_value_code          13        &lt;NA&gt;
+14                   size          14        &lt;NA&gt;
+15                   vars          15 swim-speeds
+
+                   fields field_order    files
+1         data_dictionary           1 termites
+2             description           2 termites
+3  additional_description           3 termites
+4                    note           4     &lt;NA&gt;
+5                  source           5     &lt;NA&gt;
+6              source_url           6     &lt;NA&gt;
+7              repository           7     &lt;NA&gt;
+8          repository_url           8     &lt;NA&gt;
+9            download_url           9 termites
+10              copyright          10     &lt;NA&gt;
+11                 format          11     &lt;NA&gt;
+12               varnames          12     &lt;NA&gt;
+13     missing_value_code          13     &lt;NA&gt;
+14                   size          14     &lt;NA&gt;
+15                   vars          15     &lt;NA&gt;
 
                    fields field_order   files
 1         data_dictionary           1 titanic
@@ -3295,6 +4036,91 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 13     missing_value_code          13 titanic
 14                   size          14 titanic
 15                   vars          15 titanic
+
+                   fields field_order      files
+1         data_dictionary           1 transplant
+2             description           2 transplant
+3  additional_description           3       &lt;NA&gt;
+4                    note           4 transplant
+5                  source           5 transplant
+6              source_url           6       &lt;NA&gt;
+7              repository           7       &lt;NA&gt;
+8          repository_url           8       &lt;NA&gt;
+9            download_url           9       &lt;NA&gt;
+10              copyright          10 transplant
+11                 format          11 transplant
+12               varnames          12 transplant
+13     missing_value_code          13 transplant
+14                   size          14 transplant
+15                   vars          15 transplant
+
+                   fields field_order       files
+1         data_dictionary           1 transplant1
+2             description           2 transplant1
+3  additional_description           3        &lt;NA&gt;
+4                    note           4        &lt;NA&gt;
+5                  source           5 transplant1
+6              source_url           6        &lt;NA&gt;
+7              repository           7        &lt;NA&gt;
+8          repository_url           8        &lt;NA&gt;
+9            download_url           9 transplant1
+10              copyright          10 transplant1
+11                 format          11 transplant1
+12               varnames          12 transplant1
+13     missing_value_code          13 transplant1
+14                   size          14 transplant1
+15                   vars          15 transplant1
+
+                   fields field_order       files
+1         data_dictionary           1 transplant2
+2             description           2 transplant2
+3  additional_description           3        &lt;NA&gt;
+4                    note           4        &lt;NA&gt;
+5                  source           5 transplant2
+6              source_url           6        &lt;NA&gt;
+7              repository           7        &lt;NA&gt;
+8          repository_url           8        &lt;NA&gt;
+9            download_url           9 transplant2
+10              copyright          10 transplant2
+11                 format          11 transplant2
+12               varnames          12 transplant2
+13     missing_value_code          13 transplant2
+14                   size          14 transplant2
+15                   vars          15 transplant2
+
+                   fields field_order       files
+1         data_dictionary           1 transplant3
+2             description           2 transplant3
+3  additional_description           3        &lt;NA&gt;
+4                    note           4        &lt;NA&gt;
+5                  source           5 transplant3
+6              source_url           6        &lt;NA&gt;
+7              repository           7        &lt;NA&gt;
+8          repository_url           8        &lt;NA&gt;
+9            download_url           9 transplant3
+10              copyright          10 transplant3
+11                 format          11 transplant3
+12               varnames          12        &lt;NA&gt;
+13     missing_value_code          13        &lt;NA&gt;
+14                   size          14        &lt;NA&gt;
+15                   vars          15 transplant3
+
+                   fields field_order                files
+1         data_dictionary           1 two-small-dataframes
+2             description           2 two-small-dataframes
+3  additional_description           3                 &lt;NA&gt;
+4                    note           4                 &lt;NA&gt;
+5                  source           5                 &lt;NA&gt;
+6              source_url           6                 &lt;NA&gt;
+7              repository           7                 &lt;NA&gt;
+8          repository_url           8                 &lt;NA&gt;
+9            download_url           9                 &lt;NA&gt;
+10              copyright          10                 &lt;NA&gt;
+11                 format          11                 &lt;NA&gt;
+12               varnames          12                 &lt;NA&gt;
+13     missing_value_code          13                 &lt;NA&gt;
+14                   size          14                 &lt;NA&gt;
+15                   vars          15                 &lt;NA&gt;
 
                    fields field_order               files
 1         data_dictionary           1 vaccine-willingness
@@ -3345,42 +4171,111 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 12               varnames          12 whas500
 13     missing_value_code          13 whas500
 14                   size          14 whas500
-15                   vars          15 whas500</code></pre>
+15                   vars          15 whas500
+
+                   fields field_order   files
+1         data_dictionary           1 woodard
+2             description           2 woodard
+3  additional_description           3    &lt;NA&gt;
+4                    note           4    &lt;NA&gt;
+5                  source           5 woodard
+6              source_url           6    &lt;NA&gt;
+7              repository           7    &lt;NA&gt;
+8          repository_url           8    &lt;NA&gt;
+9            download_url           9 woodard
+10              copyright          10 woodard
+11                 format          11 woodard
+12               varnames          12 woodard
+13     missing_value_code          13 woodard
+14                   size          14 woodard
+15                   vars          15 woodard
+16 additional-description          NA woodard</code></pre>
 </div>
 </div>
 </section>
 <section id="check-size-consistency" class="level2">
 <h2 class="anchored" data-anchor-id="check-size-consistency">Check size consistency</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>yaml_size <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">files=</span>yaml_roots,</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">size_ncols=</span><span class="sc">-</span><span class="dv">1</span>,</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">size_vars=</span><span class="sc">-</span><span class="dv">1</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_yamls) {</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  yaml_size<span class="sc">$</span>size_nrows[i] <span class="ot">&lt;-</span> </span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    dictionaries[[i]]<span class="sc">$</span>size<span class="sc">$</span>columns</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  yaml_size<span class="sc">$</span>size_vars[i] <span class="ot">&lt;-</span> </span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">length</span>(dictionaries[[i]]<span class="sc">$</span>vars)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>yaml_size</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>yaml_size <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">files=</span>yaml_roots,</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">size_ncols=</span><span class="sc">-</span><span class="dv">1</span>,</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">size_vars=</span><span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_yamls) {</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  yaml_size<span class="sc">$</span>size_ncols[i] <span class="ot">&lt;-</span> </span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(dictionaries[[i]]<span class="sc">$</span>size<span class="sc">$</span>columns, <span class="st">&quot;&quot;</span>)</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  yaml_size<span class="sc">$</span>size_vars[i] <span class="ot">&lt;-</span> </span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">length</span>(dictionaries[[i]]<span class="sc">$</span>vars)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>yaml_size</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>                  files size_ncols size_vars size_nrows
-1       absorbent-paper         -1         4          6
-2  art-malpresentations         -1         6          6
-3            cigarettes         -1         5          5
-4              diamonds         -1         5          5
-5       fasting-turtles         -1         5          5
-6                   fat         -1        19         19
-7          glycyrrhizin         -1         5          5
-8      hiv-intervention         -1         5          5
-9        litter-weights         -1         5          5
-10              titanic         -1         5          5
-11  vaccine-willingness         -1         8          8
-12              whas100         -1         9          9
-13              whas500         -1        22         22</code></pre>
+<pre><code>                            files size_ncols size_vars
+1                 absorbent-paper          4         4
+2                 airline-bumping          5         5
+3             albuquerque-housing          7         7
+4            art-malpresentations          6         6
+5               back-pain-runners          6         6
+6           balance-measures-tall                    8
+7           balance-measures-wide         17        17
+8                 body-dimensions         25         0
+9          breast-feeding-preterm         31        28
+10                burger-calories          3         3
+11               caries-detection          6         6
+12                 carotid-plaque                    5
+13 cholesterol-after-heart-attack                    0
+14         cigarette-measurements          5         5
+15      collaborative-consumption         31        31
+16                  cracker-bloat                    2
+17                  cracker-fiber                    0
+18    digital-citizenship-revised          6         6
+19            digital-citizenship         51        51
+20                         energy          4         4
+21                       energy01                    0
+22                       energy02                    0
+23                       energy03                    0
+24                       energy04                    0
+25              exercise-programs                    6
+26                fasting-turtles          5         5
+27                            fat         19        19
+28                            fev          5         5
+29                        fishing          5         5
+30                           fly1          1         1
+31                           fly2          2         2
+32                           fly3          2         2
+33        full-moon-er-admissions          3         3
+34                       gardasil         10        10
+35                   glycyrrhizin          5         5
+36                      grace1000          9         9
+37                         heroin          5         5
+38               hiv-intervention          5         5
+39                         leader         13        13
+40                 litter-weights          5         5
+41              module02-datasets                    0
+42                           moon          3         3
+43         psychiatric-discharges          4         4
+44                          quake                    0
+45                     rat-litter          5         5
+46                samara-velocity          3         3
+47                        sharing         31        31
+48       signapore-diamond-prices          5         5
+49                          sleep                   11
+50                    swim-speeds                    6
+51                       termites                    0
+52                        titanic          5         5
+53                     transplant         14        14
+54                    transplant1         14        14
+55                    transplant2          8         8
+56                    transplant3                    8
+57           two-small-dataframes                    0
+58            vaccine-willingness          8         8
+59                        whas100          9         9
+60                        whas500         22        22
+61                        woodard         11        11</code></pre>
 </div>
 </div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 </section>
 
 </main>

@@ -17,7 +17,7 @@ description:
 additional_description:
   https://dasl.datadescription.com/datafile/diet/
   
-download:
+download_url:
   https://dasl.datadescription.com/download/data/3163
   
 copyright:  
@@ -28,7 +28,7 @@ copyright:
 format: 
   delimiter: tab
   varnames: first row of data
-  missing-value-code: not needed
+  missing_value_code: not needed
   rows: 51
   columns: 2
 

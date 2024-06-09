@@ -9,6 +9,6 @@ description: >
 additional_description:
   http://www.statsci.org/data/general/lomaprie.html
 
-download:
+download_url:
   http://www.statsci.org/data/general/lomaprie.txt
 ---

@@ -18,7 +18,7 @@ description:
   that might help you understand what influences
   variations in sleep.
   
-download:
+download_url:
   text-format: http://www.statsci.org/data/general/sleep.txt
   additional-information: http://www.statsci.org/data/general/sleep.html
 
@@ -31,7 +31,7 @@ copyright:
 format: 
   delimiter: tab
   varnames: included in the first row of data
-  missing-value-code: NA
+  missing_value_code: NA
   rows: 62
   columns: 11
 
