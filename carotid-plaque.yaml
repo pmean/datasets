@@ -20,6 +20,10 @@ download_url:
 
 format: 
   proprietary (Excel)
+  
+size:
+  rows: 70
+  columns: 5
 
 note: >
   There are three separate worksheets. The first

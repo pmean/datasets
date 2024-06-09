@@ -2,7 +2,7 @@
 data_dictionary:
   sleep.txt
   
-source:
+source: >
   This dataset is part of the Austrasian Data and
   Story Library (OZDASL). Please cite this data as
   Smyth, GK (2011). Australasian Data and Story 
@@ -12,21 +12,20 @@ source:
   ecological and constitutional correlates. 
   Science 194 (November 12), 732-734.
 
-description:
+description: >
   This dataset has information about sleep patterns
   in 62 common mammals, along with other information
   that might help you understand what influences
   variations in sleep.
   
+additional_description:
+  http://www.statsci.org/data/general/sleep.html
+
 download_url:
   text-format: http://www.statsci.org/data/general/sleep.txt
-  additional-information: http://www.statsci.org/data/general/sleep.html
 
 copyright:
-  There is no information about the copyright for this
-  dataset. You should, however, be able to use this
-  data for individual educational purposes under the
-  Fair Use guidelines of U.S. copyright law.
+  unknown
 
 format: 
   delimiter: tab
