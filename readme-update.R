@@ -1,6 +1,8 @@
 library(glue)
 library(magrittr)
 library(readr)
+library(stringr)
+library(yaml)
 
 readme_text <- read_lines("readme-part-1.md")
 
@@ -24,7 +26,7 @@ for (i in 1:length(yaml_files)) {
 	readme_text %<>% append(
 	  glue("-   **{root}**: {blurb}"))
 	readme_text %<>% append(
-	  glue("{p0}{p1}({p2}/{p3}{f})"))
+	  glue("{p0}{p1}({p2}/{p3}{yaml_file})"))
 		
 	fn %>%
 	  str_subset(root) %>%

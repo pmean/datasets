@@ -22,7 +22,7 @@ additional_description:
   http://www.statsci.org/data/general/sleep.html
 
 download_url:
-  text-format: http://www.statsci.org/data/general/sleep.txt
+  http://www.statsci.org/data/general/sleep.txt
 
 copyright:
   unknown
