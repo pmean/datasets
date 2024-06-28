@@ -1,7 +1,6 @@
 ---
 data_dictionary: diamonds.txt
 
-<<<<<<< HEAD:diamonds.yaml
 source: 
   This file is published on Journal of
   Statistics Education website. The data
@@ -12,9 +11,6 @@ source:
   original source is Singapore's Business
   Times, 2000-02-18.
   
-
-=======
->>>>>>> 2ad1ce223b1d49cd6009d50e651349192b0f3d4c:signapore-diamond-prices.yaml
 description:  
   The data is intended to teach some lessons
   about regression models. The size of a 
