@@ -4,7 +4,7 @@ data_dictionary: diamonds.txt
 source: 
   This file is published on Journal of
   Statistics Education website. The data
-  itself is found at 
+  itself is found at
   http://jse.amstat.org/v9n2/4Cdata.txt and
   a brief description is available at
   http://jse.amstat.org/v9n2/4C.txt. The 
