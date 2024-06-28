@@ -1,17 +1,6 @@
 ---
 data_dictionary: glycyrrhizin.csv
 
-source: >
-  Sijue Chen, Wei Cao, Xianjun Xiao, Lu Wang,
-  Renhong Wan, Zihao Zou, Qian Yang & Ying Li
-  (2024) A systematic review and meta-analysis
-  of efficacy and safety of compound 
-  glycyrrhizin combined with second-generation
-  non-sedated antihistamine for the treatment 
-  of chronic urticaria, Journal of 
-  Dermatological Treatment, 35:1, 
-  DOI: 10.1080/09546634.2023.2299597
-  
 description: >
   This data is from a meta-analysis of the 
   effectiveness of glycyrrhizin, an herbal
@@ -24,6 +13,28 @@ description: >
   topic. The outcome was the total efficiency
   rate, defined as a binary outcome based on
   the Urticaria Symptom Score Reduction Index.
+
+source: >
+  Sijue Chen, Wei Cao, Xianjun Xiao, Lu Wang,
+  Renhong Wan, Zihao Zou, Qian Yang & Ying Li
+  (2024) A systematic review and meta-analysis
+  of efficacy and safety of compound 
+  glycyrrhizin combined with second-generation
+  non-sedated antihistamine for the treatment 
+  of chronic urticaria, Journal of 
+  Dermatological Treatment, 35:1, 
+  DOI: 10.1080/09546634.2023.2299597
+  
+format:
+  comma-delimited
+
+varnames: first row of data
+  
+missing_value_code: Not needed
+ 
+size:
+  rows: 25
+  columns: 5
   
 vars:
   study:

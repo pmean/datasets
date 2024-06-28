@@ -1,6 +1,16 @@
 ---
 data_dictionary: art-malpresentations.csv
 
+description: >
+  Assisted reproductive technology (ART) has
+  helped many infertile couples, but there are
+  concerns about the risks during pregnancy
+  and child birth. This paper found 11 studies
+  that examined whether the risk of
+  malpresentation (e.g., breech births) was
+  higher in ART pregnancies compared to natural
+  conception (NC).
+
 source: >
   Konstantinos Stavridis, Maria Pisimisi,
   Olga Triantafyllidou, Theodoros Kalampokas,
@@ -12,16 +22,6 @@ source: >
   Maternal-Fetal & Neonatal Medicine,
   37:1, DOI: 10.1080/14767058.2024.2313143
 
-description: >
-  Assisted reproductive technology (ART) has
-  helped many infertile couples, but there are
-  concerns about the risks during pregnancy
-  and child birth. This paper found 11 studies
-  that examined whether the risk of
-  malpresentation (e.g., breech births) was
-  higher in ART pregnancies compared to natural
-  conception (NC).
-
 copyright: >
   This data was abstracted from a table in a
   paper published under a Creative Commons
@@ -30,9 +30,15 @@ copyright: >
   source.
 
 format:
-  delimiter: comma
-  varnames: first row of data
-  missing_value_code: Not needed
+  comma-delimited
+
+varnames:
+  first row of data
+  
+missing_value_code:
+  not needed
+
+size:
   rows: 11
   columns: 6
 
@@ -42,8 +48,8 @@ vars:
 
   study_type:
     values:
-      - "casecontrol"
-      - "cohort"
+      - casecontrol
+      - cohort
 
   art_events:
     label: number of malpresentation in ART groups

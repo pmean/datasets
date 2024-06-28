@@ -3,9 +3,7 @@ data_dictionary: hiv-intervention.txt
 
 source: OzDASL website
 
-download: https://gksmyth.github.io/ozdasl/general/protsex.txt
-
-details: https://gksmyth.github.io/ozdasl/general/protsex.html
+download_url: https://gksmyth.github.io/ozdasl/general/protsex.txt
 
 description: > 
   This is a longitudinal study of an
@@ -21,6 +19,8 @@ description: >
   logarithm-transformed frequency of
   condom-protected sex ( log(Y+1) )."
 
+additional_description: https://gksmyth.github.io/ozdasl/general/protsex.html
+
 copyright: >
   Gordon K. Smyth claims copyright on
   all datasets at OzDASL, but you can
@@ -29,9 +29,15 @@ copyright: >
   for individual educational purposes.
 
 format:
-  delimiter: tab
-  varnames: first row of data
-  missing_value_code: Not needed
+  tab-delimited
+
+varnames:
+  first row of data
+  
+missing_value_code:
+  Not needed
+
+size:
   rows: 20
   columns: 5
   

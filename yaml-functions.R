@@ -62,20 +62,3 @@ extract_scales <- function(dd) {
   return(vscales)
 }
 
-list_datasets <- function() {
-	fn <- list.files()
-	yaml_files <- str_subset(fn, "yaml$")
-	for (f in yaml_files) {
-		dd <- read_yaml(f)
-		root <- str_replace(f, "\\..*", "")
-		cat(glue("{root}: {dd$description}"))
-		cat("\n\n")
-	}
-	return(0)
-}
-list_datasets()
-
-# https://github.com/pmean/datasets/blob/master/.yaml
-# https://raw.githubusercontent.com/pmean/datasets/master/.yaml
-# https://raw.githubusercontent.com/pmean/datasets/master/.csv
-

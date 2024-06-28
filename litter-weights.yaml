@@ -1,25 +1,35 @@
 ---
 data_dictionary: litter-weights.sav
 
-source: >
-  Sobin, Christina; Golub, Mari (2020), 
-  “Data for: Statistical Modeling with 
-  Litter as a Random Effect in Mixed 
-  Models to Manage Intralitter 
-  Likeness”, Mendeley Data, V1, 
-  doi: 10.17632/bwptvj2cmz.1
-
 description: >
   Hypothetical data simulated to 
   illustrate analysis issues 
   associated with random litter
   effects.
+  
+note: >
+   I made various subsets 
+   (litter-weights1, 2, etc.)
+
+source: >
+  Sobin, Christina; Golub, Mari (2020), 
+  "Data for: Statistical Modeling with 
+  Litter as a Random Effect in Mixed 
+  Models to Manage Intralitter 
+  Likeness", Mendeley Data, V1, 
+  doi: 10.17632/bwptvj2cmz.1
+  
+source_url:
+  https://doi.org/10.17632/bwptvj2cmz.1
 
 copyright: CC By 4.0
 
 format:
   proprietary: IBM SPSS
-  missing_value_code: Not needed
+  
+missing_value_code: Not needed
+
+size:
   rows: 180
   columns: 5
 
