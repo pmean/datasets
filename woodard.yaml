@@ -39,7 +39,7 @@ vars:
   Year Built:
     label: the listed year in which the structure was built (by year)
 
-  Sq. Ft.:
+  "Sq Ft":
     label: the area of the floor plan
     unit: square feet
 
@@ -53,7 +53,7 @@ vars:
     label: size of the land
     unit: acres
 
-  No. Baths:
+  "No Baths":
     label: the number of bathrooms at the residence
     scale: ordinal
     values:
@@ -65,15 +65,15 @@ vars:
     values: 
       0, 1, 2
 
-  Total $:
+  "Total $":
     label: the total assessed value of the property
     unit: U.S. dollars
 
-  Land $:
+  "Land $":
     label: the assessed value of the land
     unit: U.S. dollars
 
-  Building $:
+  "Building $":
     label: the assessed value of the building
     unit: U.S. dollars
 

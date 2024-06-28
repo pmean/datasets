@@ -8,7 +8,7 @@ varnames:
   first row of data
 
 missing_value_code: 
-  .
+  "."
   
 size:  
   rows: 117

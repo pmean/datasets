@@ -1,16 +1,6 @@
 ---
 data_dictionary: diamonds.txt
 
-source: 
-  This file is published on Journal of
-  Statistics Education website. The data
-  itself is found at
-  http://jse.amstat.org/v9n2/4Cdata.txt and
-  a brief description is available at
-  http://jse.amstat.org/v9n2/4C.txt. The 
-  original source is Singapore's Business
-  Times, 2000-02-18.
-  
 description:  
   The data is intended to teach some lessons
   about regression models. The size of a 
