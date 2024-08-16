@@ -1,8 +1,11 @@
 ---
-data_dictionary: housing.txt
+data_dictionary: albuquerque-housing
 
 format: 
-  tab-delimited
+  txt: tab-delimited
+  csv: comma-delimited
+  sas7bdat: proprietary SAS
+  sav: proprietary SPSS
   
 varnames: 
   first row of data
@@ -10,6 +13,25 @@ varnames:
 missing_value_code: 
   "."
   
+description:
+  House prices in Albuquerque in 1994.
+
+additional_description:
+  http://www.pmean.com/00files/housing.htm
+
+download_url:
+  https://github.com/pmean/introduction-to-sas/data/housing.txt
+  
+source: 
+  DASL (Data and Story Library), a repository for various
+  data sets useful for teaching. This site is, sadly, no
+  longer available.
+
+copyright:  
+  Unknown. You should be able to use this data for
+  individual educational purposes under the Fair Use
+  guidelines of U.S. copyright law.
+
 size:  
   rows: 117
   columns: 7
@@ -54,23 +76,4 @@ vars:
     value:
       yes = 1
       no = 0
-
-description:
-  House prices in Albuquerque in 1994.
-
-additional_description:
-  http://www.pmean.com/00files/housing.htm
-
-download_url:
-  https://github.com/pmean/introduction-to-sas/data/housing.txt
-  
-source: 
-  DASL (Data and Story Library), a repository for various
-  data sets useful for teaching. This site is, sadly, no
-  longer available.
-
-copyright:  
-  Unknown. You should be able to use this data for
-  individual educational purposes under the Fair Use
-  guidelines of U.S. copyright law.
 ---
