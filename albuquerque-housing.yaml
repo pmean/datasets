@@ -13,24 +13,24 @@ varnames:
 missing_value_code: 
   "."
   
-description:
+description: >
   From the original source (no longer available) 
-  "a random sample of records of resales of homes
+  A random sample of records of resales of homes
   from Feb 15 to Apr 30, 1993 from the files 
   maintained by the Albuquerque Board of Realtors.
   This type of data is collected by multiple 
   listing agencies in many cities and is used by 
-  realtors as an information base."
+  realtors as an information base.
 
 download_url:
   https://raw.githubusercontent.com/pmean/datasets/master/albuquerque-housing.csv
   
-source: 
+source: >
   DASL (Data and Story Library), a repository for various
   data sets useful for teaching. This file was lost in the
   transition of DASL from statlib to datadescription.
 
-copyright:  
+copyright: >
   Unknown. You should be able to use this data for
   individual educational purposes under the Fair Use
   guidelines of U.S. copyright law.
