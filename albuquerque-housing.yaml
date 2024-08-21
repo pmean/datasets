@@ -42,41 +42,37 @@ size:
 vars:
   price:
     label: Sales price of house
-    scale: positive real
+    scale: ratio
     unit: dollars
     
   sqft:
     label: Square footage of house
-    scale: positive real
+    scale: ratio
     unit: square feet
     
   age:
     label: Age of house
-    scale: positive real
+    scale: ratio
     unit: years
     
   features:
     label: Number of features of house
-    scale: 0 to 13
+    scale: ratio
+    range: integers 0 to 13
     
   northeast:
     label: Is house located in Northeast Albuquerque?
-    scale: binary
-    value:
-      - yes
-      - no
-    
+    scale: nominal
+    value: yes/no
+
   custom_build:
     label: Is the house custom built?
-    scale: binary
-    value:
-      - yes
-      - no
+    scale: nominal
+    value: yes/no
       
   corner_lot:
     label: Is the house on a corner lot?
+    scale: nominal
     scale: binary
-    value:
-      - yes
-      - no
+    value: yes/no
 ---
