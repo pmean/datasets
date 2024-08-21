@@ -58,7 +58,7 @@ vars:
   features:
     label: Number of features of house
     scale: ratio
-    range: integers 0 to 13
+    range: 0 to 13
     
   northeast:
     label: Is house located in Northeast Albuquerque?
@@ -73,6 +73,5 @@ vars:
   corner_lot:
     label: Is the house on a corner lot?
     scale: nominal
-    scale: binary
     value: yes/no
 ---
