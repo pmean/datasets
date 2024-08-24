@@ -13,21 +13,24 @@ varnames:
 missing_value_code: 
   "."
   
-description:
-  House prices in Albuquerque in 1994.
-
-additional_description:
-  http://www.pmean.com/00files/housing.htm
+description: >
+  From the original source (no longer available) 
+  A random sample of records of resales of homes
+  from Feb 15 to Apr 30, 1993 from the files 
+  maintained by the Albuquerque Board of Realtors.
+  This type of data is collected by multiple 
+  listing agencies in many cities and is used by 
+  realtors as an information base.
 
 download_url:
-  https://github.com/pmean/introduction-to-sas/data/housing.txt
+  https://raw.githubusercontent.com/pmean/datasets/master/albuquerque-housing.csv
   
-source: 
+source: >
   DASL (Data and Story Library), a repository for various
-  data sets useful for teaching. This site is, sadly, no
-  longer available.
+  data sets useful for teaching. This file was lost in the
+  transition of DASL from statlib to datadescription.
 
-copyright:  
+copyright: >
   Unknown. You should be able to use this data for
   individual educational purposes under the Fair Use
   guidelines of U.S. copyright law.
@@ -39,41 +42,36 @@ size:
 vars:
   price:
     label: Sales price of house
-    scale: positive real
+    scale: ratio
     unit: dollars
     
   sqft:
     label: Square footage of house
-    scale: positive real
+    scale: ratio
     unit: square feet
     
   age:
     label: Age of house
-    scale: positive real
+    scale: ratio
     unit: years
     
   features:
     label: Number of features of house
-    scale: 0 to 13
+    scale: ratio
+    range: 0 to 13
     
   northeast:
     label: Is house located in Northeast Albuquerque?
-    scale: binary
-    value:
-      yes = 1
-      no = 0
-    
+    scale: nominal
+    value: yes/no
+
   custom_build:
     label: Is the house custom built?
-    scale: binary
-    value:
-      yes = 1
-      no = 0
+    scale: nominal
+    value: yes/no
       
   corner_lot:
     label: Is the house on a corner lot?
-    scale: binary
-    value:
-      yes = 1
-      no = 0
+    scale: nominal
+    value: yes/no
 ---
